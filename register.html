@@ -7,42 +7,38 @@
     <title>Registro</title>
   </head>
   <body>
-    <div class="container">
-      <header class="header">
-        <div class="logo">
-          <img src="images/logo.png" alt="logo" />
-          <p>Únete a la red de conocimiento</p>
-        </div>
+    <main class="container">
+      <header class="mobile logo">
+        <img src="images/logo.png" alt="logo mobile" />
+        <p>Únete a la red de conocimiento</p>
       </header>
-
-      <main>
-        <div>
+      <section class="desktop-logo logo">
+        <img src="images/logo.png" alt="logo desktop" />
+      </section>
+      <section class="register">
           <div>
             <img src="" alt="avatar" />
             <i class="fa-solid fa-pencil"></i>
           </div>
-          <div>
-            <form action="">
-              <input type="text" placeholder="Nombre" />
-              <input type="text" placeholder="Apellido" />
-              <input type="text" placeholder="Correo electrónico" />
-              <div>
-                <input type="text" placeholder="Contraseña" />
-                <i class="fa-solid fa-eye"></i>
-              </div>
-              <div>
-                <input type="text" placeholder="Confirmar contraseña" />
-                <i class="fa-solid fa-eye"></i>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div>
-          <a href="terms-and-conditions.html">Leer términos y condiciones</a>
-          <!--DEBERÍA ESTAR DESHABILITADO EL ENLACE HASTA QUE NO ACEPTE LOS TÉRMINOS Y CONDICIONES-->
-          <a disabled href="home.html">REGISTRATE</a>
-        </div>
-      </main>
-    </div>
+          <form action="" method="post">
+            <input type="text" placeholder="Nombre" />
+            <input type="text" placeholder="Apellido" />
+            <input type="text" placeholder="Correo electrónico" />
+            <div>
+              <input type="text" placeholder="Contraseña" />
+              <i class="fa-solid fa-eye"></i>
+            </div>
+            <div>
+              <input type="text" placeholder="Confirmar contraseña" />
+              <i class="fa-solid fa-eye"></i>
+            </div>
+            <div>
+              <a href="terms-and-conditions.html">Leer términos y condiciones</a>
+              <button type="submit" value="Submit">REGISTRATE</button>
+            </div>
+          </form>
+
+      </section class="register">
+    </main>
   </body>
 </html>

@@ -65,12 +65,14 @@ body {
 
 }
 
+
 .container {
     width: 100%;
     min-height: 100vh;
     margin: 0 auto;
     background-color: var(--cp-black);
-
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -90,3 +92,37 @@ button {
 a {
     text-decoration: none;
 }
+
+.desktop-logo {
+    display: none;
+}
+
+.mobile {
+    display: flex;
+}
+
+
+    @media (min-width: 768px) {
+
+    .container {
+        flex-direction: row;
+    } 
+    .logo, .login, .register {
+        width: 50%;
+    }
+
+    .desktop-logo {
+        display: flex;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+
+
+
+}
+
+
+
