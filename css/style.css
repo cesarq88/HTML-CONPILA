@@ -77,7 +77,6 @@ body {
 }
 
 .header {
-    grid-area: header;
     align-items: center;
     width: 100%;
     padding: 0 20px 0 0;
@@ -102,15 +101,20 @@ a {
 .mobile {
     display: flex;
 }
-.nav-bar {
+
+#grid-header {
+    grid-area: header;
+}
+
+#grid-navbar {
     grid-area: navbar;
 }
 
-.container-components {
+#grid-main {
     grid-area: main;
 }
 
-.aside {
+#grid-aside {
     grid-area: aside;
 }
 
