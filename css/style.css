@@ -9,6 +9,7 @@
  list-style-type: none;
 
 
+
 }
 
 :root {
@@ -22,7 +23,7 @@
 }
 
 html {
-    font-size: 62,5%;
+    font-size: 62git,5%;
 }
 
 
@@ -122,6 +123,10 @@ a {
     border-radius: 50%;
 }
 
+.navbar-text {
+    display: none;
+}
+
 .desktop-logo {
     display: none;
 }
@@ -156,6 +161,33 @@ a {
         width: 50%;
     }
 
+    .nav-bar-list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-bar li {
+        width: 100%;
+    }
+
+    .nav-bar a, .nav-bar button {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+    }
+
+    .avatar-navbar {
+        width: 16px;
+        height: 16px;
+    }
+
+    .navbar-text {
+        display: inline;
+    }
+
     .desktop-logo {
         display: flex;
     }
@@ -169,7 +201,7 @@ a {
         grid-template-areas: 
             "header header header"
             "navbar main aside";
-        grid-template-columns: 2fr 8fr 2fr;
+        grid-template-columns: 3fr 6fr 3fr;
         grid-template-rows: auto 1fr;
         min-height: 100vh;
         max-width: 100%;
