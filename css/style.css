@@ -94,6 +94,34 @@ a {
     text-decoration: none;
 }
 
+.menu-container {
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    border-radius: 4px;
+}
+
+.menu-container:hover {
+    background-color: var(--cp-border);
+}
+
+.dropdown-menu {
+    background-color: var(--cp-black);
+}
+.dropdown-menu:hover {
+    background-color: var(--cp-border);
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color: var(--cp-border);
+    color: var(--cp-white);
+}
+
+.profile-avatar {
+    width: 100%;
+    border-radius: 50%;
+}
+
 .desktop-logo {
     display: none;
 }
