@@ -213,4 +213,60 @@ a {
 }
 
 
+/* ==========================================================================
+   GLOBAL LOGO STYLES
+   ========================================================================== */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.header .logo img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* MOBILE LOGO*/
+.mobile.logo img {
+    height: 50px;
+    width: auto;
+    margin: 0 auto;
+}
+
+/* DESKTOP LOGO*/
+.desktop-logo.logo img {
+    max-width: 280px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.developer-logo {
+    height: 100px;
+    width: auto;
+}
+
+/* logo mobile developer */
+.desktop-logo {
+    display: none;
+}
+
+/* logo desktop developer */
+@media (min-width: 768px) {
+    .mobile.logo {
+        display: none;
+    }
+    .desktop-logo {
+        display: flex;
+    }
+}
+
+
 
