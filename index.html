@@ -1,38 +1,36 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.css">
-  <title>Login</title>
-</head>
-
-<body>
-  <div class="container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Login</title>
+  </head>
+  <body>
     <main class="container">
-      <section class=logo>
-
+      <section class="logo">
+        <img src="images/logo.png" alt="logo" />
       </section>
-    
+      <section class="login">
         <div>
           <p>Bienvenido</p>
         </div>
-        <div>
-          <form action="">
+        <form action="" method="post">
+          <div>
+            <i class="fa-solid fa-envelope"></i>
             <input type="text" placeholder="Correo electrónico" />
-            <input type="text" placeholder="Contraseña" />
-          </form>
-        </div>
+          </div>
+          <div>
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" name="password" placeholder="Contraseña" />
+          </div>
+          <button type="submit" value="Submit">INICIA SESIÓN</button>
+        </form>
         <div>
-          <a href="home.html">INICIA SESIÓN</a>
-        </div>
-        <section>
           <p>¿No tienen cuenta?</p>
           <a href="register.html">REGÍSTRATE</a>
-        </section>
-      </main>
-  </div>
-</body>
-
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

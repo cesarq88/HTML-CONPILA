@@ -1,156 +1,156 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <title>Contactos</title>
-</head>
+  </head>
 
-<body>
+  <body class="container components">
+    <header class="header">
+        <div class="header-logo logo">
+          <img src="images/logo.png" alt="logo" />
+        </div>
+        <div class="menu-container">
+          <button class="menu">
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </button>
+          <div class="menu-dropdown">
+            <a href="index.html">Cerrar sesión</a>
+          </div>
+        </div>
+    </header>
+    <nav class="nav-bar">
+      <ul>
+        <li>
+          <a href="home.html"> <i class="fa-solid fa-house"></i>Inicio</a>
+        </li>
+        <li class="active">
+          <a href="contacts.html">
+            <i class="fa-solid fa-users"></i>Contactos</a
+          >
+        </li>
+        <li>
+          <button class="new-post">
+            <i class="fa-solid fa-circle-plus"></i>Crear publicación
+          </button>
+        </li>
+        <li>
+          <a href="profile.html">
+            <img class="profile-avatar avatar-navbar" src="" alt="avatar" />Mi
+            perfil</a
+          >
+        </li>
+        <li>
+          <a href="search.html">
+            <i class="fa-solid fa-magnifying-glass"></i>Buscar</a
+          >
+        </li>
+      </ul>
+    </nav>
 
-    <div class="container">
+    <aside>
+      <div>
+        <button class="new-post">Crear publicación</button>
+      </div>
+      <div class="stats-section">
+        <ul>
+          <li>
+            <a href="contacts.html">
+              <i class="fa-solid fa-users"></i>Seguidos</a
+            >
+            <p>2 seguidos</p>
+          </li>
+          <li>
+            <a href="contacts.html">
+              <i class="fa-solid fa-users"></i>Seguidores</a
+            >
+            <p>42 Seguidores</p>
+          </li>
+        </ul>
+      </div>
+    </aside>
 
-        <header class="header">
-            <div class="logo">
-                <img src="images/logo.png" alt="logo">
-                <div class="menu-container">
-                    <button class="menu">
-                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                    </button>
-                    <div class="menu-dropdown">
-                        <a href="index.html">Cerrar sesión</a>
-                    </div>
-                </div>
-            </div>
-            
-        </header>
-<nav class="nav-bar">
-            <ul>
-                <li>
-                    <a href="home.html">
-                        <i class="fa-solid fa-house"></i>Inicio</a>
-                </li>
-                <li class="active">
-                    <a href="contacts.html">
-                        <i class="fa-solid fa-users"></i>Contactos</a>
-                </li>
-                <li>
-                    <button class="new-post">
-                        <i class="fa-solid fa-circle-plus"></i>Crear publicación</button>
-                </li>
-                <li>
-                    <a href="profile.html">
-                        <img class="profile-avatar avatar-navbar" src="" alt="avatar">Mi perfil</a>
-                </li>
-                <li>
-                    <a href="search.html">
-                        <i class="fa-solid fa-magnifying-glass"></i>Buscar</a>
-                </li>
+    <main class="container-components">
+      <section class="profile-header">
+        <div class="profile-avatar-large">
+          <img class="profile-avatar avatar-profile" src="" alt="avatar" />
+        </div>
+        <h4 class="user-name">User name</h4>
+        <p class="user-bio">
+          Desarrollador Full Stack apasionado por construir aplicaciones web
+          escalables con React, Node.js y MongoDB. Entusiasta del código limpio
+          y el aprendizaje continuo."
+        </p>
+      </section>
 
-            </ul>
-        </nav>
+      <section class="search-users">
+        <div class="search-bar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Buscar en la Red" />
+        </div>
+      </section>
 
-        <aside>
-            <div>
-                <button class="new-post">Crear publicación</button>
-            </div>
-            <div class="stats-section">
-                <ul>
-                    <li>
-                        <a href="contacts.html">
-                            <i class="fa-solid fa-users"></i>Seguidos</a>
-                        <p>2 seguidos</p>
-                    </li>
-                    <li>
-                        <a href="contacts.html">
-                            <i class="fa-solid fa-users"></i>Seguidores</a>
-                        <p>42 Seguidores</p>
-                    </li>
-                </ul>
-            </div>
-        </aside>
-
-        <main class="profile-main">
-            <section class="profile-header">
-                <div class="profile-avatar-large">
-                    <img class="profile-avatar avatar-profile" src="" alt="avatar">
-                </div>
-                <h4 class="user-name">User name</h4>
-                <p class="user-bio">Desarrollador Full Stack apasionado por construir aplicaciones web escalables con React, Node.js y MongoDB. Entusiasta del código limpio y el aprendizaje continuo."</p>
-            </section>
-
-            <section class="search-users">
-                <div class="search-bar">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="text" placeholder="Buscar en la Red">
-                </div>
-            </section>
-
-            <section class="following-list">
-                <div class="user-card">
-                    <div class="user-img-name">
-                        <img class="profile-avatar avatar-user-card" src="" alt="avatar">
-                        <h4 class="user-name">CodeChameleon</h4>
-                    </div>
-                    <button class="btn-unfollow">dejar de seguir</button>
-                </div>
-                <div class="user-card">
-                    <div class="user-img-name">
-                        <img class="profile-avatar avatar-user-card" src="" alt="avatar">
-                        <h4 class="user-name">CodeChameleon</h4>
-                    </div>
-                    <button class="btn-unfollow">dejar de seguir</button>
-                </div>
-                <div class="user-card">
-                    <div class="user-img-name">
-                        <img class="profile-avatar avatar-user-card" src="" alt="avatar">
-                        <h4 class="user-name">CodeChameleon</h4>
-                    </div>
-                    <button class="btn-follow">seguir</button>
-                </div>
-                <div class="user-card">
-                    <div class="user-img-name">
-                        <img class="profile-avatar avatar-user-card" src="" alt="avatar">
-                        <h4 class="user-name">CodeChameleon</h4>
-                    </div>
-                    <button class="btn-unfollow">dejar de seguir</button>
-                </div>
-                <div class="user-card">
-                    <div class="user-img-name">
-                        <img class="profile-avatar avatar-user-card" src="" alt="avatar">
-                        <h4 class="user-name">DebugDandelion</h4>
-                    </div>
-                    <button class="btn-unfollow">dejar de seguir</button>
-                </div>
-                <div class="user-card">
-                    <div class="user-img-name">
-                        <img class="profile-avatar avatar-user-card" src="" alt="avatar">
-                        <h4 class="user-name">DebugDandelion</h4>
-                    </div>
-                    <button class="btn-unfollow">dejar de seguir</button>
-                </div>
-                <div class="user-card">
-                    <div class="user-img-name">
-                        <img class="profile-avatar avatar-user-card" src="" alt="avatar">
-                        <h4 class="user-name">DebugDandelion</h4>
-                    </div>
-                    <button class="btn-unfollow">dejar de seguir</button>
-                </div>
-                <div class="user-card">
-                    <div class="user-img-name">
-                        <img class="profile-avatar avatar-user-card" src="" alt="avatar">
-                        <h4 class="user-name">DebugDandelion</h4>
-                    </div>
-                    <button class="btn-unfollow">dejar de seguir</button>
-                </div>
-            </section>
-        </main>
-
-    </div>
-
-</body>
-
+      <section class="following-list">
+        <div class="user-card">
+          <div class="user-img-name">
+            <img class="profile-avatar avatar-user-card" src="" alt="avatar" />
+            <h4 class="user-name">CodeChameleon</h4>
+          </div>
+          <button class="btn-unfollow">dejar de seguir</button>
+        </div>
+        <div class="user-card">
+          <div class="user-img-name">
+            <img class="profile-avatar avatar-user-card" src="" alt="avatar" />
+            <h4 class="user-name">CodeChameleon</h4>
+          </div>
+          <button class="btn-unfollow">dejar de seguir</button>
+        </div>
+        <div class="user-card">
+          <div class="user-img-name">
+            <img class="profile-avatar avatar-user-card" src="" alt="avatar" />
+            <h4 class="user-name">CodeChameleon</h4>
+          </div>
+          <button class="btn-follow">seguir</button>
+        </div>
+        <div class="user-card">
+          <div class="user-img-name">
+            <img class="profile-avatar avatar-user-card" src="" alt="avatar" />
+            <h4 class="user-name">CodeChameleon</h4>
+          </div>
+          <button class="btn-unfollow">dejar de seguir</button>
+        </div>
+        <div class="user-card">
+          <div class="user-img-name">
+            <img class="profile-avatar avatar-user-card" src="" alt="avatar" />
+            <h4 class="user-name">DebugDandelion</h4>
+          </div>
+          <button class="btn-unfollow">dejar de seguir</button>
+        </div>
+        <div class="user-card">
+          <div class="user-img-name">
+            <img class="profile-avatar avatar-user-card" src="" alt="avatar" />
+            <h4 class="user-name">DebugDandelion</h4>
+          </div>
+          <button class="btn-unfollow">dejar de seguir</button>
+        </div>
+        <div class="user-card">
+          <div class="user-img-name">
+            <img class="profile-avatar avatar-user-card" src="" alt="avatar" />
+            <h4 class="user-name">DebugDandelion</h4>
+          </div>
+          <button class="btn-unfollow">dejar de seguir</button>
+        </div>
+        <div class="user-card">
+          <div class="user-img-name">
+            <img class="profile-avatar avatar-user-card" src="" alt="avatar" />
+            <h4 class="user-name">DebugDandelion</h4>
+          </div>
+          <button class="btn-unfollow">dejar de seguir</button>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
