@@ -1,235 +1,275 @@
 <!doctype html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
 
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Contactos</title>
+  </head>
 
-  <link rel="stylesheet" href="css/style.css" />
-  <title>Contactos</title>
-</head>
+  <body class="container components">
+    <header class="header" id="grid-header">
+      <div class="header-logo logo">
+        <img src="images/logo_horizontal.png" alt="logo" />
+      </div>
+      <div class="menu-container dropdown">
+        <button
+          class="menu"
+          type="button"
+          id="dropdownMenuButton1"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </button>
+        <ul
+          class="dropdown-menu dropdown-menu-dark"
+          aria-labelledby="dropdownMenuButton1"
+        >
+          <li><a class="dropdown-item" href="index.html">Cerrar sesión</a></li>
+        </ul>
+      </div>
+    </header>
+    <nav class="nav-bar" id="grid-navbar">
+      <ul class="nav-bar-list">
+        <li>
+          <a href="home.html">
+            <i class="fa-solid fa-house"></i>
+            <span class="navbar-text">Inicio</span>
+          </a>
+        </li>
+        <li class="active">
+          <a href="contacts.html">
+            <i class="fa-solid fa-users"></i>
+            <span class="navbar-text">Contactos</span>
+          </a>
+        </li>
 
-<body class="container components">
-  <header class="header" id="grid-header">
-    <div class="header-logo logo">
-      <img src="images/logo_horizontal.png" alt="logo" />
-    </div>
-    <div class="menu-container dropdown">
-      <button class="menu" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-        <i class="fa-solid fa-ellipsis-vertical"></i>
-      </button>
-      <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
-        <li><a class="dropdown-item" href="index.html">Cerrar sesión</a></li>
+        <li>
+          <button
+            class="new-post"
+            data-bs-toggle="modal"
+            data-bs-target="#createPostModal"
+          >
+            <i class="fa-solid fa-circle-plus"></i>
+            <span class="navbar-text">Publicar</span>
+          </button>
+        </li>
+        <li>
+          <a href="profile.html">
+            <img
+              class="profile-avatar avatar-navbar"
+              src="./user.jpg"
+              alt="Imagen perfil"
+            />
+            <span class="navbar-text">Mi perfil</span></a
+          >
+        </li>
+        <li>
+          <a href="search.html">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span class="navbar-text">Buscar</span>
+          </a>
+        </li>
       </ul>
-    </div>
-  </header>
-  <nav class="nav-bar" id="grid-navbar">
-    <ul>
-      <li>
-        <a href="home.html"> <i class="fa-solid fa-house"></i>Inicio</a>
-      </li>
-      <li class="active">
-        <a href="contacts.html">
-          <i class="fa-solid fa-users"></i>Contactos</a>
-      </li>
-      <li>
-        <button class="new-post" data-bs-toggle="modal" data-bs-target="#createPostModal">
-          <i class="fa-solid fa-circle-plus"></i>
+    </nav>
+    <aside class="aside" id="grid-aside">
+      <div>
+        <button
+          class="new-post"
+          data-bs-toggle="modal"
+          data-bs-target="#createPostModal"
+        >
           Crear publicación
         </button>
-      </li>
-      <li>
-        <a href="profile.html">
-          <img class="profile-avatar avatar-navbar" src="" alt="avatar" />Mi
-          perfil</a>
-      </li>
-      <li>
-        <a href="search.html">
-          <i class="fa-solid fa-magnifying-glass"></i>Buscar</a>
-      </li>
-    </ul>
-  </nav>
-  <aside class="aside" id="grid-aside">
-    <div>
-      <button class="new-post" data-bs-toggle="modal" data-bs-target="#createPostModal">
-        Crear publicación
-      </button>
-    </div>
-    <div class="stats-section">
-      <ul>
-        <li>
-          <a href="contacts.html">
-            <i class="fa-solid fa-users"></i>Seguidos</a>
-          <p>2 seguidos</p>
-        </li>
-        <li>
-          <a href="contacts.html">
-            <i class="fa-solid fa-users"></i>Seguidores</a>
-          <p>42 Seguidores</p>
-        </li>
-      </ul>
-    </div>
-  </aside>
-  <main class="container-components" id="grid-main">
-    <section class="profile-header">
-      <div class="profile-avatar-large">
-        <img class="profile-avatar avatar-profile" src="" alt="avatar" />
       </div>
-      <h4 class="user-name">User name</h4>
-      <p class="user-bio">
-        Desarrollador Full Stack apasionado por construir aplicaciones web
-        escalables con React, Node.js y MongoDB. Entusiasta del código limpio
-        y el aprendizaje continuo."
-      </p>
-    </section>
-
-    <section class="search-users">
-      <div class="search-bar">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <input type="text" placeholder="Buscar en la Red" />
+      <div class="stats-section">
+        <ul>
+          <li>
+            <a href="contacts.html">
+              <i class="fa-solid fa-users"></i>Seguidos</a
+            >
+            <p>2 seguidos</p>
+          </li>
+          <li>
+            <a href="contacts.html">
+              <i class="fa-solid fa-users"></i>Seguidores</a
+            >
+            <p>42 Seguidores</p>
+          </li>
+        </ul>
       </div>
-    </section>
-
-    <section class="following-list">
-      <div class="user-card">
-        <div class="user-img-name">
-          <img class="profile-avatar avatar-user-card" src="" alt="avatar" />
-          <h4 class="user-name">CodeChameleon</h4>
+    </aside>
+    <main class="container-components" id="grid-main">
+      <section class="profile-header">
+        <div class="profile-avatar-large">
+          <img class="profile-avatar avatar-profile" src="" alt="avatar" />
         </div>
-        <button class="btn-unfollow">dejar de seguir</button>
-      </div>
-      <div class="user-card">
-        <div class="user-img-name">
-          <img class="profile-avatar avatar-user-card" src="" alt="avatar" />
-          <h4 class="user-name">CodeChameleon</h4>
+        <h4 class="user-name">User name</h4>
+        <p class="user-bio">
+          Desarrollador Full Stack apasionado por construir aplicaciones web
+          escalables con React, Node.js y MongoDB. Entusiasta del código limpio
+          y el aprendizaje continuo."
+        </p>
+      </section>
+
+      <section class="search-users">
+        <div class="search-bar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Buscar en la Red" />
         </div>
-        <button class="btn-unfollow">dejar de seguir</button>
-      </div>
-      <div class="user-card">
-        <div class="user-img-name">
-          <img class="profile-avatar avatar-user-card" src="" alt="avatar" />
-          <h4 class="user-name">CodeChameleon</h4>
+      </section>
+
+      <section class="following-list">
+        <div class="user-card">
+          <div class="user-img-name">
+            <img class="profile-avatar avatar-user-card" src="" alt="avatar" />
+            <h4 class="user-name">CodeChameleon</h4>
+          </div>
+          <button class="btn-unfollow">dejar de seguir</button>
         </div>
-        <button class="btn-follow">seguir</button>
-      </div>
-      <div class="user-card">
-        <div class="user-img-name">
-          <img class="profile-avatar avatar-user-card" src="" alt="avatar" />
-          <h4 class="user-name">CodeChameleon</h4>
+        <div class="user-card">
+          <div class="user-img-name">
+            <img class="profile-avatar avatar-user-card" src="" alt="avatar" />
+            <h4 class="user-name">CodeChameleon</h4>
+          </div>
+          <button class="btn-unfollow">dejar de seguir</button>
         </div>
-        <button class="btn-unfollow">dejar de seguir</button>
-      </div>
-      <div class="user-card">
-        <div class="user-img-name">
-          <img class="profile-avatar avatar-user-card" src="" alt="avatar" />
-          <h4 class="user-name">DebugDandelion</h4>
+        <div class="user-card">
+          <div class="user-img-name">
+            <img class="profile-avatar avatar-user-card" src="" alt="avatar" />
+            <h4 class="user-name">CodeChameleon</h4>
+          </div>
+          <button class="btn-follow">seguir</button>
         </div>
-        <button class="btn-unfollow">dejar de seguir</button>
-      </div>
-      <div class="user-card">
-        <div class="user-img-name">
-          <img class="profile-avatar avatar-user-card" src="" alt="avatar" />
-          <h4 class="user-name">DebugDandelion</h4>
+        <div class="user-card">
+          <div class="user-img-name">
+            <img class="profile-avatar avatar-user-card" src="" alt="avatar" />
+            <h4 class="user-name">CodeChameleon</h4>
+          </div>
+          <button class="btn-unfollow">dejar de seguir</button>
         </div>
-        <button class="btn-unfollow">dejar de seguir</button>
-      </div>
-      <div class="user-card">
-        <div class="user-img-name">
-          <img class="profile-avatar avatar-user-card" src="" alt="avatar" />
-          <h4 class="user-name">DebugDandelion</h4>
+        <div class="user-card">
+          <div class="user-img-name">
+            <img class="profile-avatar avatar-user-card" src="" alt="avatar" />
+            <h4 class="user-name">DebugDandelion</h4>
+          </div>
+          <button class="btn-unfollow">dejar de seguir</button>
         </div>
-        <button class="btn-unfollow">dejar de seguir</button>
-      </div>
-      <div class="user-card">
-        <div class="user-img-name">
-          <img class="profile-avatar avatar-user-card" src="" alt="avatar" />
-          <h4 class="user-name">DebugDandelion</h4>
+        <div class="user-card">
+          <div class="user-img-name">
+            <img class="profile-avatar avatar-user-card" src="" alt="avatar" />
+            <h4 class="user-name">DebugDandelion</h4>
+          </div>
+          <button class="btn-unfollow">dejar de seguir</button>
         </div>
-        <button class="btn-unfollow">dejar de seguir</button>
-      </div>
-    </section>
-  </main>
-
-  <!--Modal-->
-<div class="modal fade" id="createPostModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-md modal-dialog-centered">
-    <div class="modal-content cp-modal-box p-4 rounded-3">
-
-      <div class="modal-header border-0 pb-0 flex-column align-items-start position-relative">
-
-        <h2 class="modal-title h5 fw-bold m-0 text-uppercase">
-          Crear nueva publicación
-        </h2>
-
-        <button
-          type="button"
-          class="btn-close btn-close-white position-absolute top-0 end-0 m-1"
-          data-bs-dismiss="modal"
-          aria-label="Close">
-        </button>
-
-      </div>
-
-      <div class="modal-body px-0 pb-0">
-
-        <div class="mb-3">
-          <input
-            type="text"
-            class="form-control cp-input p-3 rounded-2"
-            placeholder="Escribe tu título">
+        <div class="user-card">
+          <div class="user-img-name">
+            <img class="profile-avatar avatar-user-card" src="" alt="avatar" />
+            <h4 class="user-name">DebugDandelion</h4>
+          </div>
+          <button class="btn-unfollow">dejar de seguir</button>
         </div>
-
-        <div class="mb-3">
-          <textarea
-            class="form-control cp-input p-3 rounded-2"
-            placeholder="¿Qué quieres compartir?"
-            rows="5"></textarea>
+        <div class="user-card">
+          <div class="user-img-name">
+            <img class="profile-avatar avatar-user-card" src="" alt="avatar" />
+            <h4 class="user-name">DebugDandelion</h4>
+          </div>
+          <button class="btn-unfollow">dejar de seguir</button>
         </div>
+      </section>
+    </main>
 
-        <div class="mb-3">
+    <!--Modal-->
+    <div
+      class="modal fade"
+      id="createPostModal"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-md modal-dialog-centered">
+        <div class="modal-content cp-modal-box p-4 rounded-3">
+          <div
+            class="modal-header border-0 pb-0 flex-column align-items-start position-relative"
+          >
+            <h2 class="modal-title h5 fw-bold m-0 text-uppercase">
+              Crear nueva publicación
+            </h2>
 
-          <div class="cp-file-wrapper">
-            <input
-              type="file"
-              id="file-upload"
-              class="form-control cp-file-input"
-              accept="image/*"
-              multiple>
+            <button
+              type="button"
+              class="btn-close btn-close-white position-absolute top-0 end-0 m-1"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
 
-            <div class="cp-file-overlay rounded-2">
-              <i class="fa-solid fa-image me-2"></i> Foto
+          <div class="modal-body px-0 pb-0">
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control cp-input p-3 rounded-2"
+                placeholder="Escribe tu título"
+              />
             </div>
-          </div>
 
-          <div id="preview-container" class="d-none mt-3 text-center">
-            <img
-              id="image-preview"
-              src=""
-              alt="Previsualización"
-              class="img-fluid rounded-2 border"
-              style="max-height:180px; border-color: var(--cp-border) !important;">
-          </div>
+            <div class="mb-3">
+              <textarea
+                class="form-control cp-input p-3 rounded-2"
+                placeholder="¿Qué quieres compartir?"
+                rows="5"
+              ></textarea>
+            </div>
 
+            <div class="mb-3">
+              <div class="cp-file-wrapper">
+                <input
+                  type="file"
+                  id="file-upload"
+                  class="form-control cp-file-input"
+                  accept="image/*"
+                  multiple
+                />
+
+                <div class="cp-file-overlay rounded-2">
+                  <i class="fa-solid fa-image me-2"></i> Foto
+                </div>
+              </div>
+
+              <div id="preview-container" class="d-none mt-3 text-center">
+                <img
+                  id="image-preview"
+                  src=""
+                  alt="Previsualización"
+                  class="img-fluid rounded-2 border"
+                  style="
+                    max-height: 180px;
+                    border-color: var(--cp-border) !important;
+                  "
+                />
+              </div>
+            </div>
+
+            <button
+              type="button"
+              class="btn cp-btn-submit w-100 fw-bold py-3 rounded-2 mt-2"
+            >
+              PUBLICAR
+            </button>
+          </div>
         </div>
-
-        <button
-          type="button"
-          class="btn cp-btn-submit w-100 fw-bold py-3 rounded-2 mt-2">
-          PUBLICAR
-        </button>
-
       </div>
-
     </div>
-  </div>
-</div>
 
-  <!--Links modal bootstrap-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/modal-preview.js"></script>
-</body>
-
+    <!--Links modal bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/modal-preview.js"></script>
+  </body>
 </html>
