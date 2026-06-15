@@ -111,6 +111,12 @@ a {
     flex-direction: column;
 }
 
+.register-link {
+    display: flex;
+    align-items: center;
+    min-width: 245px;
+}
+
 .input-group {
     display: flex;
     align-items: center;
@@ -133,6 +139,22 @@ a {
     justify-content:space-between;
 }
 
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button-submit{
+    display: block;
+    width: 60%;
+    align-self: center;
+    text-align: center;
+    background-color: var(--cp-green);
+    color: var(--cp-black);
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin: 1rem auto;
+}
 
 .menu-container {
     display: flex;
