@@ -8,7 +8,6 @@
  list-style: none;
  list-style-type: none;
 
-
 }
 
 :root {
@@ -100,6 +99,40 @@ a {
     text-decoration: none;
     font-size: 1.5rem;
 }
+
+.login, .register-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#loginForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--cp-black);
+    border: solid 1px var(--cp-grey);
+    border-radius: 4px;
+}
+
+.input-group input {
+    flex: 1;
+    background-color: inherit;
+    border: none;
+    margin-left: 1rem;
+
+}
+
+.conpila_password-container {
+    justify-content:space-between;
+}
+
 
 .menu-container {
     display: flex;
