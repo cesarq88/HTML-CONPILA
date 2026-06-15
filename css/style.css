@@ -9,7 +9,6 @@
  list-style-type: none;
 
 
-
 }
 
 :root {
@@ -23,7 +22,7 @@
 }
 
 html {
-    font-size: 62git,5%;
+    font-size: 62,5%;
 }
 
 
@@ -125,6 +124,8 @@ a {
 
 .navbar-text {
     display: none;
+    font-family: 'JetBrains Mono', monospace;
+    white-space: nowrap;
 }
 
 .desktop-logo {
@@ -168,15 +169,15 @@ a {
     }
 
     .nav-bar li {
+        display: flex;
         width: 100%;
     }
 
-    .nav-bar a, .nav-bar button {
-        width: 100%;
+    .nav-bar li > a, .nav-bar li > button {
+        flex: 1;
         display: flex;
         align-items: center;
         gap: 8px;
-
     }
 
     .avatar-navbar {
