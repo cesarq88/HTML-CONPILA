@@ -7,6 +7,7 @@
  box-sizing: border-box;
  list-style: none;
  list-style-type: none;
+ /*outline: 1px solid red !important;*/
 
 }
 
@@ -125,6 +126,10 @@ a {
     background-color: var(--cp-black);
     border: solid 1px var(--cp-grey);
     border-radius: 4px;
+    
+    
+    gap: 1rem;
+   
 }
 
 .input-group input {
@@ -213,6 +218,76 @@ a {
 #grid-aside {
     grid-area: aside;
 }
+.card-post {
+    background-color: var(--cp-charcoal);
+    border: 1px solid var(--cp-border);
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.user-img-name-date{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+}
+.comment-input{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.reactions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.reactions button {
+    transition: transform 0.25s ease;
+}
+
+
+.reactions button:hover {
+    transform: scale(1.2);
+}
+.card-comment {
+    background-color: rgba(13, 13, 13, 0.5); /* Variación de var(--cp-black) para contraste interno */
+    border: 1px solid var(--cp-border);
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 5px;
+}
+
+.card-comment .user-img-name-date {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.card-comment .user-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.card-comment .user-name {
+    font-size: 1.3rem;
+    color: var(--cp-green);
+    font-weight: 600;
+    margin: 0;
+}
+
 
 
     @media (min-width: 768px) {
@@ -419,3 +494,45 @@ a {
     filter: drop-shadow(0 0 10px var(--cp-green)) drop-shadow(0 0 25px var(--cp-green));  
 }
 
+/* ==========================================
+   BASE STYLES FOR ALL AVATARS
+   ========================================== */
+.profile-avatar {
+    object-fit: cover; 
+    border-radius: 50%; 
+    border: 2px solid rgba(255, 255, 255, 0.1); 
+    display: inline-block;
+}
+
+.avatar-navbar {
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.avatar-post {
+    width: 80px;
+    height: 80px;
+    margin-right: 12px; 
+    transition: transform 0.2s ease;
+}
+
+.avatar-post:hover {
+    transform: scale(1.05); 
+}
+
+.avatar-comment {
+    width: 80px;
+    height: 80px;
+    margin-right: 8px;
+}
+
+.avatar-profile {
+    width: 120px;
+    height: 120px;
+}
+
+.avatar-user-card {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+}
