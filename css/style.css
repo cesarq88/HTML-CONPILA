@@ -143,7 +143,10 @@ a {
     color: var(--cp-white);
     border: none;
     margin-left: 1rem;
+}
 
+.register-input-text-color {
+    color: var(--cp-white);
 }
 
 .conpila_password-container {
@@ -165,6 +168,11 @@ a {
     border-radius: 5px;
     padding: 0.5rem;
     margin: 1rem auto;
+}
+
+.button-disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
 }
 
 .menu-container {
