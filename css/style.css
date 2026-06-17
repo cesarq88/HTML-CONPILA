@@ -151,7 +151,10 @@ a {
     color: var(--cp-white);
     border: none;
     margin-left: 1rem;
+}
 
+.register-input-text-color {
+    color: var(--cp-white);
 }
 
 .conpila_password-container {
@@ -173,6 +176,11 @@ a {
     border-radius: 5px;
     padding: 0.5rem;
     margin: 1rem auto;
+}
+
+.button-disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
 }
 
 .menu-container {
@@ -217,6 +225,36 @@ a {
 
 .mobile {
     display: flex;
+}
+
+.nav-bar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--cp-black);
+    border-top: 1px solid var(--cp-border);
+}
+
+.nav-bar-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar li {
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 
 #grid-header {
@@ -315,10 +353,16 @@ a {
         width: 50%;
     }
 
+    .nav-bar {
+        align-items: start;
+        position: unset;
+    }
+
     .nav-bar-list {
         width: 100%;
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .nav-bar li {
