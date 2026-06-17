@@ -68,20 +68,28 @@ body {
 
 
 .container {
+    
     width: 100%;
     min-height: 100vh;
     margin: 0 auto;
-    background-color: var(--cp-black);
+    background-color: var(--cp-black); 
     display: flex;
     flex-direction: column;
+  
 }
+
 
 .header {
     align-items: center;
     width: 100%;
     padding: 0 20px 0 0;
+    display: flex;
+    justify-content: space-between;
 
 }
+
+        
+
 
 label, input {
     font-size: 1.35rem;
@@ -200,6 +208,8 @@ a {
     font-family: 'JetBrains Mono', monospace;
     white-space: nowrap;
 }
+
+
 
 .desktop-logo {
     display: none;
@@ -345,6 +355,7 @@ a {
         grid-template-areas: 
             "header header header"
             "navbar main aside";
+            
         grid-template-columns: 3fr 6fr 3fr;
         grid-template-rows: auto 1fr;
         min-height: 100vh;
