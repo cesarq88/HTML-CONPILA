@@ -132,16 +132,13 @@ a {
 
 .input-group {
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
     margin-bottom: 1.5rem;
     padding: 0.5rem 1rem;
     background-color: var(--cp-black);
     border: solid 1px var(--cp-green);
-    border-radius: 4px;
-    
-    
-    gap: 1rem;
-   
+    border-radius: 4px;   
 }
 
 .input-group > i {
@@ -268,6 +265,7 @@ a {
     display: flex;
     width: 100%;
     justify-content: center;
+    margin: 1rem;
 }
 
 #grid-header {
@@ -314,18 +312,13 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: auto;
-    
-
-    
+    gap: auto;   
 }
-
 
 .comment-input{
     display: flex;
     align-items: center;
-    gap: 1rem;
-    margin-bottom: 2rem;
+    margin: 1rem 0.5rem 2rem;
 }
 
 .reactions {
@@ -348,11 +341,12 @@ a {
     background-color: rgba(13, 13, 13, 0.5); /* Variación de var(--cp-black) para contraste interno */
     border: 1px solid var(--cp-border);
     border-radius: 10px;
-    padding: 15px;
+    padding: 1,5rem;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin: 5px;
+    gap: 1rem;
+    margin: 0.5rem;
+    padding: 1.5rem;
 }
 
 .card-comment .user-img-name-date {
