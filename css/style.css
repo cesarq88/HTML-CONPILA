@@ -78,14 +78,18 @@ body {
   
 }
 
+.pagina-muro .aside {
+    display: none;
+}
+
+
 
 .header {
     align-items: center;
     width: 100%;
-    padding: 0 20px 0 0;
     display: flex;
     justify-content: space-between;
-
+    margin: 1rem 0;
 }
 
         
@@ -211,6 +215,15 @@ a {
     border-radius: 50%;
 }
 
+#hidden-new-post{
+    display: none;
+}
+
+.followers-banner {
+    display: none;
+
+}
+
 .navbar-text {
     display: none;
     font-family: 'JetBrains Mono', monospace;
@@ -282,12 +295,32 @@ a {
     display: flex;
     flex-direction: column;
 }
+
+.post-text{
+    display: flex;
+    flex-direction: column;
+
+}
+.see-more-button{
+    display:flex;
+    justify-content: flex-end;
+
+    
+    
+}
 .user-img-name-date{
     
     display: flex;
     flex-direction: row;
-    justify-content: center ;
+    align-items: center;
+    justify-content: flex-start;
+    gap: auto;
+    
+
+    
 }
+
+
 .comment-input{
     display: flex;
     align-items: center;
@@ -335,6 +368,10 @@ a {
     gap: 8px;
 }
 
+
+
+
+
 .card-comment .user-name {
     font-size: 1.3rem;
     color: var(--cp-green);
@@ -342,8 +379,19 @@ a {
     margin: 0;
 }
 
+.post-user-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 
+}
 
+.publication-date {
+    margin: 0;
+    text-align: right;
+}
     @media (min-width: 768px) {
 
     .container {
@@ -352,7 +400,13 @@ a {
     .logo, .login, .register {
         width: 50%;
     }
+    #hidden-new-post{
+    display: unset;
+    }
 
+    .followers-banner {
+    display: unset;
+    }
     .nav-bar {
         align-items: start;
         position: unset;
@@ -393,6 +447,10 @@ a {
     .mobile {
         display: none;
     }
+
+    .pagina-muro .aside {
+    display: flex;
+}
 
     .components {
         display: grid;
@@ -566,8 +624,8 @@ a {
 }
 
 .avatar-navbar {
-    width: 30px !important;
-    height: 30px !important;
+    width: 30px ;
+    height: 30px ;
 }
 
 .avatar-post {
