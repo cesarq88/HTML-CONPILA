@@ -299,6 +299,10 @@ a {
     flex-direction: column;
 
 }
+.see-more-container{
+    display: flex;
+    flex-direction: column;
+}
 .see-more-button{
     display:flex;
     justify-content: flex-end;
@@ -328,6 +332,11 @@ a {
     align-items: center;
 
 }
+
+.reaction-like, .reaction-dislike{
+    display: ruby;
+}
+
 
 .reactions button {
     transition: transform 0.25s ease;
