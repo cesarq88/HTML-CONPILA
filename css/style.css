@@ -206,6 +206,23 @@ a {
     background-color: var(--cp-border);
     color: var(--cp-white);
 }
+#image-profile-user{
+    width: 15rem;
+    height: 15rem;
+}
+
+.profile-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cp-charcoal);
+    border: 1px solid var(--cp-border);
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+
+}
 
 .profile-avatar {
     width: 100%;
@@ -294,7 +311,7 @@ a {
     flex-direction: column;
 }
 
-.post-text{
+.post-text, .post-content{
     display: flex;
     flex-direction: column;
 
