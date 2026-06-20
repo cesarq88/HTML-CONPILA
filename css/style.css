@@ -78,10 +78,44 @@ body {
   
 }
 
+.followers-banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+
 .followers-banner.page-home {
     display: none;
 }
 
+.followers-counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+.number-of-followers{
+    display: flex;
+    width: 4.5rem;
+    justify-content: space-between;
+}
+
+.label-followers {
+    color: var(--cp-white);
+}
+
+.fa-user {
+    background-color: var(--cp-green);
+    color: var(--cp-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 2rem;
+    height: 2.25rem;
+
+}
 
 
 .header {
