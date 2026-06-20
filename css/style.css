@@ -481,7 +481,7 @@ a {
 }
 
 
-    @media (min-width: 768px) {
+@media (min-width: 768px) {
 
     .container {
         flex-direction: row;
@@ -497,7 +497,6 @@ a {
     display: unset;
     }
 
-}
     .nav-bar {
         align-items: start;
         position: unset;
@@ -539,8 +538,6 @@ a {
         display: none;
     }
 
-   
-
     .components {
         display: grid;
         grid-template-areas: 
@@ -581,9 +578,9 @@ a {
     margin-left: auto;
     margin-right: auto;
     transition: all 0.3s ease;
-}
+    }
 
-.followers .new-post:hover {
+    .followers .new-post:hover {
         filter: brightness(1.15);
         box-shadow: 0 0 15px rgba(94, 255, 0, 0.6);
         transform: translateY(-2px);
@@ -813,8 +810,8 @@ a {
 }
 
 .avatar-post {
-    width: 80px;
-    height: 80px;
+    width: 8rem;
+    height: 8rem;
     margin-right: 12px; 
     transition: transform 0.2s ease;
 }
@@ -830,8 +827,13 @@ a {
 }
 
 .avatar-profile {
-    width: 120px;
-    height: 120px;
+    width: 12rem;
+    height: 12rem;
+}
+
+.avatar-contacts-page {
+    width: 10rem;
+    height: 10rem;
 }
 
 .avatar-user-card {
