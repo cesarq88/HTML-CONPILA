@@ -271,6 +271,15 @@ a {
     justify-content: center;
     margin: 0;
     padding: 0;
+    
+}
+
+.nav-bar-list i {
+    color: var(--cp-green);
+}
+
+.nav-bar li a, .nav-bar li button {
+    color: var(--cp-white);
 }
 
 .nav-bar li {
