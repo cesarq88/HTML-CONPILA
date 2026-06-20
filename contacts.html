@@ -35,34 +35,8 @@
       </div>
     </header>
 
-    <aside class="aside" id="grid-aside">
-      <div>
-        <button
-          class="new-post" id="hidden-new-post"
-          data-bs-toggle="modal"
-          data-bs-target="#createPostModal"
-        >
-          Crear publicación
-        </button>
-      </div>
-      <div class=" followers-banner">
-        <ul>
-          <li>
-            <a href="contacts.html">
-              <i class="fa-solid fa-users"></i>Seguidos</a
-            >
-            <p>2 seguidos</p>
-          </li>
-          <li>
-            <a href="contacts.html">
-              <i class="fa-solid fa-users"></i>Seguidores</a
-            >
-            <p>42 Seguidores</p>
-          </li>
-        </ul>
-      </div>
-    </aside>
     <main class="container-components" id="grid-main">
+
       <section class="profile-header">
         <div class="profile-avatar-large">
           <img class="profile-avatar avatar-profile" src="images/avatar 1.png" alt="avatar" />
@@ -75,6 +49,33 @@
         </p>
       </section>
 
+      <section class="followers" id="grid-section-followers">
+        <div>
+          <button
+            class="new-post" id="hidden-new-post"
+            data-bs-toggle="modal"
+            data-bs-target="#createPostModal"
+          >
+            CREAR PUBLICACIÓN
+          </button>
+        </div>
+        <div class="followers-banner">
+          <ul>
+            <li>
+              <a href="contacts.html">
+                <i class="fa-solid fa-users"></i>Seguidos</a
+              >
+              <p>2 seguidos</p>
+            </li>
+            <li>
+              <a href="contacts.html">
+                <i class="fa-solid fa-users"></i>Seguidores</a
+              >
+              <p>42 Seguidores</p>
+            </li>
+          </ul>
+        </div>
+      </section>
       <section class="search-users">
         <div class="search-bar">
           <i class="fa-solid fa-magnifying-glass"></i>
@@ -141,6 +142,7 @@
         </div>
       </section>
     </main>
+
     <nav class="nav-bar" id="grid-navbar">
       <ul class="nav-bar-list">
         <li>
@@ -163,7 +165,7 @@
             data-bs-target="#createPostModal"
           >
             <i class="fa-solid fa-circle-plus"></i>
-            <span class="navbar-text">Publicar</span>
+            <span class="navbar-text">Crear publicación</span>
           </button>
         </li>
         <li>

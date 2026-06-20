@@ -35,19 +35,47 @@
       </div>
     </header>
 
-  
     <main class="container-components" id="grid-main">
-      <section class="profile-header">
-        <img class="profile-avatar" id="image-profile-user" src="images/avatar 1.png" alt="Imagen perfil" />
+      <section class="profile-header" id="grid-section-user-info">
+        <img class="profile-avatar avatar-profile" src="images/avatar 1.png" alt="Imagen perfil" />
         <h1 class="profile-info">Nombre de usuario</h1>
-        <p class="about-you">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit odit,
-          quisquam optio commodi voluptates repellat dicta, animi maxime
-          voluptatum reiciendis amet praesentium, necessitatibus non harum.
-          Quisquam nobis repudiandae recusandae a?
+        <p class="user-bio">
+          Desarrollador Full Stack apasionado por construir aplicaciones web
+          escalables con React, Node.js y MongoDB. Entusiasta del código limpio
+          y el aprendizaje continuo."
         </p>
       </section>
-      <section class="posts">
+      <section class="followers" id="grid-section-followers">
+
+      <button class="new-post" id="hidden-new-post" data-bs-toggle="modal" data-bs-target="#createPostModal">
+        CREAR PUBLICACIÓN
+      </button>
+
+        <div class="followers-banner">
+            <ul>
+                <div>
+                    <li>
+                        <a href="contacts.html">
+                            <i class="fa-solid fa-users"></i>
+                            Seguidores
+                        </a>
+                        <p>tantos seguidores</p>
+                    </li>
+                </div>
+
+                <div>
+                    <li>
+                        <a href="contacts.html">
+                            <i class="fa-solid fa-users"></i>
+                            Seguidos
+                        </a>
+                        <p>tantos seguidos</p>
+                    </li>
+                </div>
+            </ul>
+        </div>
+      </section>
+      <section class="posts" id="grid-section-user-posts">
         <article class="card-post">
           <section>
             <h2 class="your-posts">Tus Publicaciones</h2>
@@ -65,14 +93,8 @@
               cum, sint fugit ex impedit nemo a iure autem incidunt, nihil
               temporibus! Ad, accusamus numquam labore fugit dolore molestiae.
             </p>
-            
-            <div class="see-more-container">
-                <button class="see-more-button">Ver más</button>
-            </div>
-            <div>
-                <img class="img-post" alt="imagen-post" src="images/imagendeejemplo.png">
-            </div>
-            
+            <img class="img-post" alt="" src="" />
+            <button>Ver mas</button>
           </section>
         </article>
       </section>
@@ -95,13 +117,6 @@
         </article>
         -->
 
-      <button
-        class="new-post"
-        data-bs-toggle="modal"
-        data-bs-target="#createPostModal"
-      >
-        <i class="fa-solid fa-circle-plus"></i>Crear publicación
-      </button>
 
       <!--Article modal bootstrap-->
       <article
@@ -182,26 +197,7 @@
         </div>
       </article>
     </main>
-    <aside class="aside" id="grid-aside">
-      <button class="new-post" id="hidden-new-post" data-bs-toggle="modal" data-bs-target="#createPostModal">
-        Crear publicación
-      </button>
-      <div class="followers-banner">
-        <ul>
-          <li>
-            <a href="contacts.html">
-              <i class="fa-solid fa-users"></i>Seguidores</a
-            >
-            <p>tantos seguidores</p>
-          </li>
-          <li>
-            <a href="contacts.html">
-              <i class="fa-solid fa-users"></i>Seguidos</a>
-            <p>tantos seguidos</p>
-          </li>
-        </ul>
-      </div>
-    </aside>
+
     <nav class="nav-bar" id="grid-navbar">
       <ul class="nav-bar-list">
         <li>
@@ -220,7 +216,7 @@
         <li>
           <button class="new-post" data-bs-toggle="modal"data-bs-target="#createPostModal">
             <i class="fa-solid fa-circle-plus"></i>
-            <span class="navbar-text">Publicar</span>
+            <span class="navbar-text">Crear publicación</span>
           </button>
         </li>
         <li class="active">

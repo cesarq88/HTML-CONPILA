@@ -103,6 +103,7 @@ button {
     background: none;
     border: none;
     font-family: inherit;
+    font-weight: 700;
     cursor: pointer;
     color: inherit;
     font-size: 1.5rem;
@@ -170,6 +171,7 @@ a {
 .button-submit{
     display: block;
     width: 60%;
+    font-weight: 700;
     align-self: center;
     text-align: center;
     background-color: var(--cp-green);
@@ -236,6 +238,7 @@ a {
 .navbar-text {
     display: none;
     font-family: 'JetBrains Mono', monospace;
+    font-weight: initial;
     white-space: nowrap;
 }
 
@@ -313,9 +316,18 @@ a {
     grid-area: main;
 }
 
-#grid-aside {
-    grid-area: aside;
+#grid-section-user-info {
+    grid-area: user-info;
 }
+
+#grid-section-followers {
+    grid-area: followers;
+}
+
+#grid-section-user-posts {
+    grid-area: user-posts;
+}
+
 .card-post {
     background-color: var(--cp-charcoal);
     border: 1px solid var(--cp-border);
@@ -481,9 +493,11 @@ a {
     display: unset;
     }
 
-    .followers-banner {
+    .followers-banner.page-home {
     display: unset;
     }
+
+}
     .nav-bar {
         align-items: start;
         position: unset;
@@ -530,10 +544,10 @@ a {
     .components {
         display: grid;
         grid-template-areas: 
-            "header header header"
-            "navbar main aside";
+            "header header"
+            "navbar main";
             
-        grid-template-columns: 3fr 6fr 3fr;
+        grid-template-columns: 1fr 3fr;
         grid-template-rows: auto 1fr;
         min-height: 100vh;
         max-width: 100%;
@@ -546,15 +560,21 @@ a {
         justify-content: space-between;
     }
 
-    .aside .new-post {
+    #grid-main {
+        display: grid;
+        grid-template-areas: 
+            "user-info followers"
+            "user-posts followers";
+        grid-template-columns: 2fr 1fr;
+    }
+
+    #hidden-new-post {
     display: block;
     width: 100%;
     max-width: 220px;
     background-color: var(--cp-green);
     color: var(--cp-black);
-    font-size: 1.4rem;
     font-weight: 700;
-    text-transform: uppercase;
     padding: 12px 20px;
     border-radius: 6px;
     margin-top: 1.5rem;
@@ -563,7 +583,7 @@ a {
     transition: all 0.3s ease;
 }
 
-.aside .new-post:hover {
+.followers .new-post:hover {
         filter: brightness(1.15);
         box-shadow: 0 0 15px rgba(94, 255, 0, 0.6);
         transform: translateY(-2px);
@@ -783,7 +803,6 @@ a {
    ========================================== */
 .profile-avatar {
     object-fit: cover; 
-    border-radius: 50%; 
     border: 2px solid rgba(255, 255, 255, 0.1); 
     display: inline-block;
 }

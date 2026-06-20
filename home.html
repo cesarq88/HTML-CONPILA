@@ -37,75 +37,39 @@
         </div>
     </header>
 
-    <nav class="nav-bar" id="grid-navbar">
-        <ul class="nav-bar-list">
-            <li class="active">
-                <a href="home.html">
-                    <i class="fa-solid fa-house"></i>
-                    <span class="navbar-text">Inicio</span>
-                </a>
-            </li>
-            <li>
-                <a href="contacts.html">
-                    <i class="fa-solid fa-users"></i>
-                    <span class="navbar-text">Contactos</span>
-                </a>
-            </li>
-
-            <li>
-                <button class="new-post" data-bs-toggle="modal" data-bs-target="#createPostModal">
-                    <i class="fa-solid fa-circle-plus"></i>
-                    <span class="navbar-text">Publicar</span>
-                </button>
-            </li>
-            <li>
-                <a href="profile.html">
-                    <img class="profile-avatar avatar-navbar" src="images/avatar 1.png" alt="Imagen perfil" />
-                    <span class="navbar-text">Mi perfil</span>
-                </a>
-            </li>
-            <li>
-                <a href="search.html">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <span class="navbar-text">Buscar</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-
-    <aside class="aside" id="grid-aside">
-        <div>
-            <button class="new-post" id="hidden-new-post" data-bs-toggle="modal" data-bs-target="#createPostModal">
-                Nueva publicación
-            </button>
-        </div>
-
-        <div class="followers-banner page-home">
-            <ul>
-                <div>
-                    <li>
-                        <a href="contacts.html">
-                            <i class="fa-solid fa-users"></i>
-                            Seguidores
-                        </a>
-                        <p>tantos seguidores</p>
-                    </li>
-                </div>
-
-                <div>
-                    <li>
-                        <a href="contacts.html">
-                            <i class="fa-solid fa-users"></i>
-                            Seguidos
-                        </a>
-                        <p>tantos seguidos</p>
-                    </li>
-                </div>
-            </ul>
-        </div>
-    </aside>
-
     <main class="container-components" id="grid-main">
+
+        <section class="followers" id="grid-section-followers">
+            <div>
+                <button class="new-post" id="hidden-new-post" data-bs-toggle="modal" data-bs-target="#createPostModal">
+                    NUEVA PUBLICACIÓN
+                </button>
+            </div>
+
+            <div class="followers-banner page-home">
+                <ul>
+                    <div>
+                        <li>
+                            <a href="contacts.html">
+                                <i class="fa-solid fa-users"></i>
+                                Seguidores
+                            </a>
+                            <p>tantos seguidores</p>
+                        </li>
+                    </div>
+
+                    <div>
+                        <li>
+                            <a href="contacts.html">
+                                <i class="fa-solid fa-users"></i>
+                                Seguidos
+                            </a>
+                            <p>tantos seguidos</p>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </section>
 
         <article class="card-post">
             <section>
@@ -361,6 +325,43 @@
 
     </main>
 
+    <nav class="nav-bar" id="grid-navbar">
+        <ul class="nav-bar-list">
+            <li class="active">
+                <a href="home.html">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="navbar-text">Inicio</span>
+                </a>
+            </li>
+            <li>
+                <a href="contacts.html">
+                    <i class="fa-solid fa-users"></i>
+                    <span class="navbar-text">Contactos</span>
+                </a>
+            </li>
+
+            <li>
+                <button class="new-post" data-bs-toggle="modal" data-bs-target="#createPostModal">
+                    <i class="fa-solid fa-circle-plus"></i>
+                    <span class="navbar-text">Crear publicación</span>
+                </button>
+            </li>
+            <li>
+                <a href="profile.html">
+                    <img class="profile-avatar avatar-navbar" src="images/avatar 1.png" alt="Imagen perfil" />
+                    <span class="navbar-text">Mi perfil</span>
+                </a>
+            </li>
+            <li>
+                <a href="search.html">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span class="navbar-text">Buscar</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--Modal-->
     <div class="modal fade" id="createPostModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-md modal-dialog-centered">
             <div class="modal-content cp-modal-box p-4 rounded-3">
@@ -407,6 +408,7 @@
         </div>
     </div>
 
+    <!--Links modal bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/modal-preview.js"></script>
 
