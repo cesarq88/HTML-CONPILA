@@ -289,6 +289,18 @@ a {
     margin: 1rem;
 }
 
+/* --- NAVBAR ACTIVE--- */
+.nav-bar .nav-bar-list li.active a,
+.nav-bar .nav-bar-list li.active button {
+    color: var(--cp-green);
+}
+
+.nav-bar .nav-bar-list li.active a i,
+.nav-bar .nav-bar-list li.active button i {
+    color: var(--cp-green);
+}
+
+
 #grid-header {
     grid-area: header;
 }
