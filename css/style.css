@@ -78,7 +78,7 @@ body {
   
 }
 
-.pagina-muro .aside {
+.followers-banner.page-home {
     display: none;
 }
 
@@ -233,11 +233,6 @@ a {
     display: none;
 }
 
-.followers-banner {
-    display: none;
-
-}
-
 .navbar-text {
     display: none;
     font-family: 'JetBrains Mono', monospace;
@@ -314,19 +309,58 @@ a {
 .post-text, .post-content{
     display: flex;
     flex-direction: column;
-
 }
+
 .see-more-container{
     display: flex;
     flex-direction: column;
 }
+
 .see-more-button{
     display:flex;
-    justify-content: flex-end;
+    justify-content: flex-end;   
+}
 
-    
+.following-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*REVISAR ESTA PARTE*/
+
+.user-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    width: 35%;
+}
+
+/*REVISAR ESTA PARTE*/
+
+ .user-card .btn-unfollow, .user-card .btn-follow  {
+    display: block;
+    align-self: center;
+    text-align: center;
+    background-color: var(--cp-green);
+    color: var(--cp-black);
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin: 1rem auto;
+    flex-wrap: nowrap;
     
 }
+
+.user-img-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    
 .user-img-name-date{
     
     display: flex;
@@ -412,6 +446,8 @@ a {
     margin: 0;
     text-align: right;
 }
+
+
     @media (min-width: 768px) {
 
     .container {
@@ -468,9 +504,7 @@ a {
         display: none;
     }
 
-    .pagina-muro .aside {
-    display: flex;
-}
+   
 
     .components {
         display: grid;
@@ -671,7 +705,8 @@ a {
 }
 
 .avatar-user-card {
-    width: 45px;
-    height: 45px;
-    margin-right: 10px;
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
 }
