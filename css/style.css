@@ -525,6 +525,30 @@ a {
         justify-content: space-between;
     }
 
+
+    .aside .new-post {
+    display: block;
+    width: 100%;
+    max-width: 220px;
+    background-color: var(--cp-green);
+    color: var(--cp-black);
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    border-radius: 6px;
+    margin-top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.3s ease;
+}
+
+.aside .new-post:hover {
+        filter: brightness(1.15);
+        box-shadow: 0 0 15px rgba(94, 255, 0, 0.6);
+        transform: translateY(-2px);
+    }
+
     
     /* ==========================================================================
    MODAL STYLES
