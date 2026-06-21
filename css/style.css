@@ -67,7 +67,7 @@ body {
 }
 
 
-.container {
+.own-container {
     
     width: 100%;
     min-height: 100vh;
@@ -75,6 +75,9 @@ body {
     background-color: var(--cp-black); 
     display: flex;
     flex-direction: column;
+    padding: 1rem;
+
+    
   
 }
 
@@ -172,7 +175,7 @@ a {
     margin-bottom: 1.5rem;
     padding: 0.5rem 1rem;
     background-color: var(--cp-black);
-    border: solid 1px var(--cp-green);
+    border: solid 0.1rem var(--cp-green);
     border-radius: 4px;   
 }
 
@@ -528,7 +531,7 @@ a {
 .search-bar input {
     padding: 1rem 0.5rem;
     background-color: var(--cp-black);
-    border: solid var(--cp-green);
+    border: solid 0.1rem var(--cp-green);
     border-radius: 0.5rem;
     width: 100%;
     max-width: 31rem;
@@ -543,7 +546,7 @@ a {
 
 @media (min-width: 768px) {
 
-    .container {
+    .own-container {
         flex-direction: row;
     } 
     .logo, .login, .register {
