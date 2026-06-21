@@ -120,7 +120,6 @@ body {
 
 }
 
-
 .header {
     align-items: center;
     width: 100%;
@@ -557,7 +556,10 @@ a {
     }
 
     .followers-banner.page-home {
-    display: unset;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 1rem;
     }
 
     .nav-bar {
