@@ -21,13 +21,14 @@ document.addEventListener("DOMContentLoaded", () => {
             await delay(600); 
             splash.style.display = "none";
             
-            // 4. Inyectar el login de manera invisible para preparar su transición
+            /*// 4. Inyectar el login de manera invisible para preparar su transición
             login.style.display = "flex"; 
             login.style.transition = "opacity 0.6s ease";
             
             // 5. Micro-delay para forzar el redibujado (reflow) del navegador
             await delay(50); 
             login.style.opacity = "1";
+            */
         })();
     }
 
@@ -54,56 +55,6 @@ document.addEventListener("DOMContentLoaded", () => {
         loginForm.addEventListener('submit', (e) => {
             e.preventDefault();
             // Simula el redireccionamiento exitoso tras validar campos del HTML5
-            window.location.href = loginForm.getAttribute("action");
-        });
-    }
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-    const splash = document.getElementById("splash-screen");
-    const login = document.getElementById("login-screen");
-    const loginForm = document.getElementById('loginForm');
-    const passIcon = document.querySelector(".conpila_password-icon");
-
-    const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
-
-    // Control del Splash Screen
-    if (splash && login) {
-        (async () => {
-            await delay(3000); 
-            splash.style.transition = "opacity 0.6s ease";
-            splash.style.opacity = "0";
-            
-            await delay(600); 
-            splash.style.display = "none";
-            
-            login.style.display = "flex"; 
-            login.style.transition = "opacity 0.6s ease";
-            
-            await delay(50); 
-            login.style.opacity = "1";
-        })();
-    }
-
-    // Mostrar / Ocultar contraseña
-    if (passIcon) {
-        passIcon.addEventListener("click", function() {
-            const container = this.closest(".conpila_password-container");
-            const input = container ? container.querySelector("input") : null;
-            
-            if (input) {
-                const isPassword = input.type === "password";
-                input.type = isPassword ? "text" : "password";
-                this.classList.toggle("fa-regular", !isPassword);
-                this.classList.toggle("fa-solid", isPassword);
-            }
-        });
-    }
-
-    // Redirección del formulario
-    if (loginForm) {
-        loginForm.addEventListener('submit', (e) => {
-            e.preventDefault();
             window.location.href = loginForm.getAttribute("action");
         });
     }
