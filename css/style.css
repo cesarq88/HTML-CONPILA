@@ -127,7 +127,9 @@ body {
     justify-content: space-between;
     margin: 1rem 0;
 }
-
+#terms-and-conditions-header{
+    justify-content: center;
+}
         
 
 
@@ -541,6 +543,69 @@ a {
     font-size: 2rem;
 }
 
+/* Terminos y condiciones*/
+
+.terms-and-conditios-title{
+    text-align: center;
+}
+
+.terms-and-conditions-card{
+   
+    margin: 1rem;
+    background-color: var(--cp-charcoal);
+    border: 0rem solid var(--cp-border);
+    border-radius: 2rem;
+    padding: 1.5rem;
+    
+}
+.terms-and-conditios-text{
+    text-align: justify;
+}
+.register-terms-form{
+    display: flex;
+    flex-direction: column;
+} 
+
+.terms-acceptance{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center ;
+    gap: 3rem;
+}
+.terms-button{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    
+}
+.terms-button a{
+    background-color: var(--cp-green);
+    border: 0rem solid var(--cp-border);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    font-size: 2rem;
+}
+
+.credit-developer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    margin-top: auto;
+    margin-bottom: 2rem;
+}
+
+.credit-developer p{
+    font-size: 1rem;
+}
+.developer-logo {
+    display: flex;
+    width: 5rem;
+  
+}
+
+
 
 
 @media (min-width: 768px) {
@@ -783,10 +848,8 @@ a {
     margin: 0 auto;
 }
 
-.developer-logo {
-    height: 100px;
-    width: auto;
-}
+
+
 
 /* logo mobile developer */
 .desktop-logo {
