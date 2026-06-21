@@ -167,12 +167,12 @@ a {
 #loginForm {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin-top: 3rem;
+    max-width: 35rem;
 }
 
 .register-link {
-    display: flex;
-    align-items: center;
     min-width: 245px;
 }
 
@@ -236,6 +236,12 @@ a {
     margin: auto 2rem;
     justify-content: center;
 
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .terms-and-conditions-button-group {
@@ -666,7 +672,7 @@ a {
         flex-direction: row;
     } 
     .register {
-        width: 50%;
+        width: auto;
     }
 
     #login-screen {
@@ -679,11 +685,11 @@ a {
     }
 
     .logo img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    width: 30vw;
-    height: auto;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        width: 30vw;
+        height: auto;
     }
 
     .followers-banner.page-home {
@@ -912,14 +918,11 @@ header .logo img {
 
 /* DESKTOP LOGO*/
 .desktop-logo.logo img {
-    max-width: 280px;
+    max-width: 20rem;
     width: 100%;
     height: auto;
     margin: 0 auto;
 }
-
-
-
 
 /* logo mobile developer */
 .desktop-logo {
@@ -933,6 +936,18 @@ header .logo img {
     }
     .desktop-logo {
         display: flex;
+    }
+
+    .register-body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #loginForm {
+        max-width: 35rem;
     }
 }
 
