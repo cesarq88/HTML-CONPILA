@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Registro</title>
   </head>
-  <body class="own-container">
+  <body class="own-container register-body">
      <header class="mobile logo">
         <img src="images/logo_horizontal.png" alt="logo mobile" />
         <p>Únete a la red de conocimiento</p>
@@ -17,10 +17,11 @@
       <section class="desktop-logo logo">
         <img src="images/logo_vertical.png" alt="logo desktop" />
       </section>
+
       <section class="register">
-          <div>
-            <img src="" alt="avatar" />
-            <i class="fa-solid fa-pencil"></i>
+          <div class="user-avatar-default-container">
+            <img src="images/user-solid.png"  class="profile-avatar user-avatar-default" alt="avatar"/>
+            <i class="fa-solid fa-pencil user-avatar-pencil"></i>
           </div>
           <form id="loginForm" action="" method="post">
             <input class="input-group register-input-text-color" type="text" placeholder="Nombre" />
@@ -34,9 +35,9 @@
               <input type="text" placeholder="Confirmar contraseña" />
               <i class="fa-solid fa-eye"></i>
             </div>
-            <div>
-              <a class="button-submit" href="terms-and-conditions.html">Leer términos y condiciones</a>
-              <button class="button-submit button-disabled" type="submit" value="Submit" disabled="true">REGISTRATE</button>
+            <div class="terms-and-conditions-button-group">
+              <a class="button-submit terms-and-conditions-button" href="terms-and-conditions.html">Leer términos y condiciones</a>
+              <button class="button-submit button-disabled terms-and-conditions-button" type="submit" value="Submit" disabled="true">REGISTRATE</button>
             </div>
           </form>
 

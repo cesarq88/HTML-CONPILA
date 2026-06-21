@@ -132,6 +132,7 @@ body {
     justify-content: space-between;
     margin: 1rem 0;
 }
+
 #terms-and-conditions-header{
     justify-content: center;
 }
@@ -166,6 +167,7 @@ a {
 #loginForm {
     display: flex;
     flex-direction: column;
+    margin-top: 3rem;
 }
 
 .register-link {
@@ -229,6 +231,35 @@ a {
     cursor: not-allowed;
 }
 
+.register-body{
+    width: auto;
+    margin: auto 2rem;
+    justify-content: center;
+
+}
+
+.terms-and-conditions-button-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    gap: 3rem;
+}
+
+
+.terms-and-conditions-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    flex: 1;
+    line-height: 1.1rem;
+    min-height: 4rem;
+}
+
 .menu-container {
     display: flex;
     justify-content: center;
@@ -269,9 +300,31 @@ a {
 
 }
 
+.user-avatar-default-container {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color: var(--cp-white);
+    margin: 1rem auto;
+}
+
 .profile-avatar {
     width: 100%;
     border-radius: 50%;
+}
+
+.user-avatar-default{
+    background-color: var(--cp-green);
+    color: var(--cp-black);
+    max-width: 7rem;
+    height: auto;
+    align-self: center;
+}
+
+.fa-solid.fa-pencil.user-avatar-pencil {
+    justify-items: end;
+    align-self: flex-end;
+
 }
 
 #hidden-new-post{
@@ -284,8 +337,6 @@ a {
     font-weight: initial;
     white-space: nowrap;
 }
-
-
 
 .desktop-logo {
     display: none;
@@ -497,10 +548,6 @@ a {
     align-items: center;
     gap: 8px;
 }
-
-
-
-
 
 .card-comment .user-name {
     font-size: 1.3rem;
@@ -837,6 +884,7 @@ a {
    ========================================================================== */
 .logo {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -849,7 +897,7 @@ a {
     height: auto;
 }
 
-.header .logo img {
+header .logo img {
     height: 40px;
     width: auto;
     object-fit: contain;
