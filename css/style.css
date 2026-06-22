@@ -636,7 +636,22 @@ a {
     border: 0rem solid var(--cp-border);
     border-radius: 2rem;
     padding: 1.5rem;
+    max-height: 65rem;
+    overflow-y: scroll;
     
+    
+}
+.terms-and-conditions-card::-webkit-scrollbar {
+    width: 1rem;
+}
+
+.terms-and-conditions-card::-webkit-scrollbar-track {
+    background-color: var(--cp-charcoal);
+}
+
+.terms-and-conditions-card::-webkit-scrollbar-thumb {
+    background-color: var(--cp-green);
+    border-radius: 1rem;
 }
 .terms-and-conditios-text{
     text-align: justify;
@@ -840,10 +855,26 @@ a {
         border: 0rem solid var(--cp-border);
         border-radius: 2rem;
         padding: 1.5rem;
+        max-height: 55rem;
+        overflow-y: scroll;
+        
 
     }
+
+    .terms-and-conditions-card::-webkit-scrollbar {
+        width: 1rem;
+    }
+    
+    .terms-and-conditions-card::-webkit-scrollbar-track {
+        background-color: var(--cp-charcoal);
+    }
+    
+    .terms-and-conditions-card::-webkit-scrollbar-thumb {
+        background-color: var(--cp-green);
+        border-radius: 1rem;
+    }
     .terms-and-conditios-text{
-        text-align: justify;
+            text-align: justify;
     }
 
     .terms-bottom{
