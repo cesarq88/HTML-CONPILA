@@ -74,7 +74,7 @@ body {
     background-color: var(--cp-black); 
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 0 1rem 1rem;
 }
 
 #login-screen {
@@ -128,9 +128,16 @@ body {
 .header {
     align-items: center;
     width: 100%;
+    min-height: 6rem;
     display: flex;
     justify-content: space-between;
-    margin: 1rem 0;
+    margin: 0 0 2rem;
+    position: fixed;
+    top: 0;
+    background-color: var(--cp-black);
+    border-bottom: solid 0.1rem var(--cp-border);
+    z-index: 9;
+    
 }
 
 #terms-and-conditions-header{
@@ -167,12 +174,12 @@ a {
 #loginForm {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin-top: 3rem;
+    max-width: 35rem;
 }
 
 .register-link {
-    display: flex;
-    align-items: center;
     min-width: 245px;
 }
 
@@ -238,6 +245,12 @@ a {
 
 }
 
+.register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .terms-and-conditions-button-group {
     display: flex;
     justify-content: space-between;
@@ -258,6 +271,10 @@ a {
     flex: 1;
     line-height: 1.1rem;
     min-height: 4rem;
+}
+
+.container-components {
+    margin-top: 6rem;
 }
 
 .menu-container {
@@ -666,7 +683,7 @@ a {
         flex-direction: row;
     } 
     .register {
-        width: 50%;
+        width: auto;
     }
 
     #login-screen {
@@ -679,11 +696,11 @@ a {
     }
 
     .logo img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    width: 30vw;
-    height: auto;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        width: 30vw;
+        height: auto;
     }
 
     .followers-banner.page-home {
@@ -696,6 +713,8 @@ a {
     .nav-bar {
         align-items: start;
         position: unset;
+        margin-top: 6rem;
+        border-top: none;
     }
 
     .nav-bar-list {
@@ -996,14 +1015,11 @@ header .logo img {
 
 /* DESKTOP LOGO*/
 .desktop-logo.logo img {
-    max-width: 280px;
+    max-width: 20rem;
     width: 100%;
     height: auto;
     margin: 0 auto;
 }
-
-
-
 
 /* logo mobile developer */
 .desktop-logo {
@@ -1017,6 +1033,18 @@ header .logo img {
     }
     .desktop-logo {
         display: flex;
+    }
+
+    .register-body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #loginForm {
+        max-width: 35rem;
     }
 }
 
