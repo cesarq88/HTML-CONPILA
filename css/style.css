@@ -813,14 +813,16 @@ a {
         flex-direction: row;
         justify-content: space-around;
         max-width: 100rem;
-         margin: 1rem auto;
+        margin: 1rem auto;
         
     }
     .register-terms-form{
         display: flex;
         flex-direction: row;
+         max-width: 10rem;
         
-        gap: 20rem;
+        
+        gap: 10rem;
     } 
 
 
