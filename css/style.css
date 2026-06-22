@@ -181,6 +181,7 @@ a {
 
 .register-link {
     min-width: 245px;
+    margin-top: 2rem;
 }
 
 .input-group {
@@ -488,7 +489,7 @@ a {
     align-items: center;
     justify-content: center;
     margin: 1rem;
-    width: 35%;
+    width: 18rem;
 }
 
 /*REVISAR ESTA PARTE*/
@@ -503,7 +504,10 @@ a {
     padding: 0.5rem;
     margin: 1rem auto;
     flex-wrap: nowrap;
-    
+}
+
+.btn-unfollow , .btn-follow {
+    min-width: 10rem;
 }
 
 .user-img-name {
@@ -806,6 +810,14 @@ a {
         filter: brightness(1.15);
         box-shadow: 0 0 15px rgba(94, 255, 0, 0.6);
         transform: translateY(-2px);
+    }
+
+    .following-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
 
     /* Terminos y condiciones*/
