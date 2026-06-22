@@ -74,7 +74,7 @@ body {
     background-color: var(--cp-black); 
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 0 1rem 1rem;
 }
 
 #login-screen {
@@ -128,9 +128,16 @@ body {
 .header {
     align-items: center;
     width: 100%;
+    min-height: 6rem;
     display: flex;
     justify-content: space-between;
-    margin: 1rem 0;
+    margin: 0 0 2rem;
+    position: fixed;
+    top: 0;
+    background-color: var(--cp-black);
+    border-bottom: solid 0.1rem var(--cp-border);
+    z-index: 9;
+    
 }
 
 #terms-and-conditions-header{
@@ -264,6 +271,10 @@ a {
     flex: 1;
     line-height: 1.1rem;
     min-height: 4rem;
+}
+
+.container-components {
+    margin-top: 6rem;
 }
 
 .menu-container {
@@ -702,6 +713,8 @@ a {
     .nav-bar {
         align-items: start;
         position: unset;
+        margin-top: 6rem;
+        border-top: none;
     }
 
     .nav-bar-list {
