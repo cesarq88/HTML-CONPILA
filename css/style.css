@@ -625,6 +625,10 @@ a {
 
 /* Terminos y condiciones*/
 
+.terms-and-conditios-container {
+    margin-top: 8rem;
+}
+
 .terms-and-conditios-title{
     text-align: center;
 }
