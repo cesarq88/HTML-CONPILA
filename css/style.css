@@ -277,11 +277,18 @@ a {
     margin-top: 6rem;
 }
 
+.header-logo.logo {
+    align-self: center;
+    justify-self: center;
+}
+
 .menu-container {
     display: flex;
     justify-content: center;
     width: 50px;
     border-radius: 4px;
+    align-self: center;
+    justify-self: flex-end;
 }
 
 .menu-container:hover {
