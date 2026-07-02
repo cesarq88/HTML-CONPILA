@@ -474,10 +474,12 @@ a {
 }
 
 .following-list {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2,18rem);
+    gap: 2rem;
     justify-content: center;
-    align-items: center;
+    justify-items: center;
+    
 }
 
 /*REVISAR ESTA PARTE*/
