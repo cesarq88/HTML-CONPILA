@@ -1,493 +1,416 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <meta name="keywords" content="ConPila, home, muro,  comunidad, red social, tecnología, desarrollo de software, programación">
-    <meta name="description" content="ConPila es la red social donde los amantes de la tecnología
-      comparten conocimientos, publican contenido y conectan con otros entusiastas del mundo digital.">
-    
-    <link rel="stylesheet" href="css/reset.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
 
-    <title>Muro - ConPila | Red social para entusiastas de la tecnología</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="keywords"
+    content="ConPila, home, muro,  comunidad, red social, tecnología, desarrollo de software, programación">
+  <meta name="description" content="ConPila es la red social donde los amantes de la tecnología
+      comparten conocimientos, publican contenido y conectan con otros entusiastas del mundo digital.">
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <title>Muro - ConPila | Red social para entusiastas de la tecnología</title>
+</head>
 
 <body class="own-container components">
 
-    <header class="header" id="grid-header">
-      <div></div>
-      <div class="header-logo logo">
-        <img src="images/logo_horizontal.png" alt="logo conpila con rayo de color verde" />
-      </div>
+  <header class="header" id="grid-header">
+    <div></div>
+    <div class="header-logo logo">
+      <img src="images/logo_horizontal.png" alt="logo conpila con rayo de color verde" />
+    </div>
 
-      <div class="menu-container dropdown">
-        <button
-          class="menu"
-          type="button"
-          id="dropdownMenuButton1"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
-          <i class="fa-solid fa-ellipsis-vertical"></i>
-        </button>
+    <div class="menu-container dropdown">
+      <button class="menu" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fa-solid fa-ellipsis-vertical"></i>
+      </button>
 
-        <ul
-          class="dropdown-menu dropdown-menu-dark"
-          aria-labelledby="dropdownMenuButton1"
-        >
-          <li>
-            <a class="dropdown-item" href="index.html"> Cerrar sesión </a>
-          </li>
-        </ul>
-      </div>
-    </header>
+      <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+        <li>
+          <a class="dropdown-item" href="index.html"> Cerrar sesión </a>
+        </li>
+      </ul>
+    </div>
+  </header>
 
-    <main class="container-components" id="grid-main">
-      <section class="followers" id="grid-section-followers">
-        <button
-            class="new-post"
-            id="hidden-new-post"
-            data-bs-toggle="modal"
-            data-bs-target="#createPostModal"
-          >
-            NUEVA PUBLICACIÓN
-        </button>
+  <main class="container-components" id="grid-main">
+    <section class="followers" id="grid-section-followers">
+      <button class="new-post" id="hidden-new-post" data-bs-toggle="modal" data-bs-target="#createPostModal">
+        NUEVA PUBLICACIÓN
+      </button>
 
-        <ul class="followers-banner page-home">
-          <li>
-            <a class="followers-counter label-followers" href="contacts.html">
-              <span class="number-of-followers">
-                <i class="fa-solid fa-user"></i>51
-              </span>
-              <span class="label-followers">seguidos</span>
-            </a>
-          </li>
-          <li>
-            <a class="followers-counter" href="contacts.html">
-              <span class="number-of-followers label-followers">
-                <i class="fa-solid fa-user"></i>42
-              </span>
-              <span class="label-followers">seguidores</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-
-      <article class="card-post">
-        <section>
-          <div class="user-img-name-date">
-            <img
-              class="profile-avatar avatar-post"
-              src="images/avatar 1.png"
-              alt="avatar"
-            />
-
-            <div class="post-user-info user-row">
-              <h3 class="user-name">Nombre de usuario</h3>
-              <h4 class="publication-date">Since...</h4>
-            </div>
-          </div>
-
-          <div class="post-title">
-            <h2>Como hacer una red social con IA?</h2>
-          </div>
-
-          <div class="post-text">
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
-                voluptates? Totam atque porro ab exercitationem consequatur
-                quisquam tenetur, corrupti quos non voluptatibus, error sunt.
-                Repellat dolorem incidunt adipisci sunt facere! Lorem, ipsum
-                dolor sit amet consectetur adipisicing elit. Accusantium earum
-                cumque cum, sint fugit ex impedit nemo a iure autem incidunt,
-                nihil temporibus! Ad, accusamus numquam labore fugit dolore
-                molestiae.
-              </p>
-            </div>
-            <div class="see-more-container">
-              <button class="see-more-button">Ver más</button>
-            </div>
-            <div>
-              <img
-                class="img-post"
-                alt="imagen-post"
-                src="images/imagendeejemplo.png"
-              />
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <div class="reactions">
-            <button class="reaction-like">
-              <i class="fa-regular fa-thumbs-up"></i>
-              <p>5</p>
-            </button>
-
-            <div class="power-bar"></div>
-
-            <button class="reaction-dislike">
-              <i class="fa-regular fa-thumbs-down"></i>
-              <p>56</p>
-            </button>
-          </div>
-        </section>
-
-        <section>
-          <h3>Comentarios</h3>
-
-          <section class="comment-input">
-            <img
-              class="profile-avatar avatar-comment"
-              src="images/avatar 1.png"
-              alt="avatar"
-            />
-
-            <div class="input-group">
-              <input type="text" placeholder="Escribe un comentario..." />
-              <button>
-                <i class="fa-solid fa-paper-plane"></i>
-              </button>
-            </div>
-          </section>
-
-          <section class="comments">
-            <section class="card-comment">
-              <div class="user-img-name-date">
-                <img
-                  class="profile-avatar avatar-comment"
-                  src="images/avatar 4.png"
-                  alt="avatar"
-                />
-
-                <div class="user-row">
-                  <h4 class="user-name">Nombre de usuario</h4>
-                  <h5 class="publication-date">Since...</h5>
-                </div>
-              </div>
-
-              <p class="text-comment">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-                dolorem laudantium fuga fugiat rem obcaecati maiores
-                consequuntur blanditiis ipsum natus.
-              </p>
-            </section>
-
-            <section class="card-comment">
-              <div class="user-img-name-date">
-                <img
-                  class="profile-avatar avatar-comment"
-                  src="images/avatar 3.png"
-                  alt="avatar"
-                />
-
-                <div class="user-row">
-                  <h4 class="user-name">Nombre de usuario</h4>
-                  <h5 class="publication-date">Since...</h5>
-                </div>
-              </div>
-
-              <p class="text-comment">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-                dolorem laudantium fuga fugiat rem obcaecati maiores
-                consequuntur blanditiis ipsum natus.
-              </p>
-            </section>
-
-            <section class="card-comment">
-              <div class="user-img-name-date">
-                <img
-                  class="profile-avatar avatar-comment"
-                  src="images/avatar 5.png"
-                  alt="avatar"
-                />
-
-                <div class="user-row">
-                  <h4 class="user-name">Nombre de usuario</h4>
-                  <h5 class="publication-date">Since...</h5>
-                </div>
-              </div>
-
-              <p class="text-comment">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-                dolorem laudantium fuga fugiat rem obcaecati maiores
-                consequuntur blanditiis ipsum natus.
-              </p>
-            </section>
-          </section>
-        </section>
-      </article>
-      <article class="card-post">
-        <section>
-          <div class="user-img-name-date">
-            <img
-              class="profile-avatar avatar-post"
-              src="images/avatar 1.png"
-              alt="avatar"
-            />
-
-            <div class="user-row">
-              <h3 class="user-name">Nombre de usuario</h3>
-              <h4 class="publication-date">Since...</h4>
-            </div>
-          </div>
-
-          <div class="post-title">
-            <h2>Como hacer una red social con IA?</h2>
-          </div>
-
-          <div>
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
-                voluptates? Totam atque porro ab exercitationem consequatur
-                quisquam tenetur, corrupti quos non voluptatibus, error sunt.
-                Repellat dolorem incidunt adipisci sunt facere! Lorem, ipsum
-                dolor sit amet consectetur adipisicing elit. Accusantium earum
-                cumque cum, sint fugit ex impedit nemo a iure autem incidunt,
-                nihil temporibus! Ad, accusamus numquam labore fugit dolore
-                molestiae.
-              </p>
-            </div>
-
-            <div>
-              <img
-                class="img-post"
-                alt="imagen-post"
-                src="images/imagendeejemplo6.png"
-              />
-            </div>
-          </div>
-
-          <div>
-            <button>Ver más</button>
-          </div>
-        </section>
-
-        <section>
-          <div class="reactions">
-            <button>
-              <i class="fa-regular fa-thumbs-up"></i>
-            </button>
-
-            <div class="power-bar"></div>
-
-            <button>
-              <i class="fa-regular fa-thumbs-down"></i>
-            </button>
-          </div>
-        </section>
-
-        <section>
-          <h3>Comentarios</h3>
-
-          <section class="comment-input">
-            <img
-              class="profile-avatar avatar-comment"
-              src="images/avatar 1.png"
-              alt="avatar"
-            />
-
-            <div class="input-group">
-              <input type="text" placeholder="Escribe un comentario..." />
-              <button>
-                <i class="fa-solid fa-paper-plane"></i>
-              </button>
-            </div>
-          </section>
-
-          <section class="comments">
-            <section class="card-comment">
-              <div class="user-img-name-date">
-                <img
-                  class="profile-avatar avatar-comment"
-                  src="images/avatar 7.png"
-                  alt="avatar"
-                />
-
-                <div class="user-row">
-                  <h4 class="user-name">Nombre de usuario</h4>
-                  <h5 class="publication-date">Since...</h5>
-                </div>
-              </div>
-
-              <p class="text-comment">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-                dolorem laudantium fuga fugiat rem obcaecati maiores
-                consequuntur blanditiis ipsum natus.
-              </p>
-            </section>
-
-            <section class="card-comment">
-              <div class="user-img-name-date">
-                <img
-                  class="profile-avatar avatar-comment"
-                  src="images/avatar 6.png"
-                  alt="avatar"
-                />
-
-                <div class="user-row">
-                  <h4 class="user-name">Nombre de usuario</h4>
-                  <h5 class="publication-date">Since...</h5>
-                </div>
-              </div>
-
-              <p class="text-comment">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-                dolorem laudantium fuga fugiat rem obcaecati maiores
-                consequuntur blanditiis ipsum natus.
-              </p>
-            </section>
-
-            <section class="card-comment">
-              <div class="user-img-name-date">
-                <img
-                  class="profile-avatar avatar-comment"
-                  src="images/avatar 8.png"
-                  alt="avatar"
-                />
-
-                <div class="user-row">
-                  <h4 class="user-name">Nombre de usuario</h4>
-                  <h5 class="publication-date">Since...</h5>
-                </div>
-              </div>
-
-              <p class="text-comment">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-                dolorem laudantium fuga fugiat rem obcaecati maiores
-                consequuntur blanditiis ipsum natus.
-              </p>
-            </section>
-          </section>
-        </section>
-      </article>
-    </main>
-
-    <nav class="nav-bar" id="grid-navbar">
-      <ul class="nav-bar-list">
-        <li class="active">
-          <a href="home.html">
-            <i class="fa-solid fa-house"></i>
-            <span class="navbar-text">Inicio</span>
+      <ul class="followers-banner page-home">
+        <li>
+          <a class="followers-counter label-followers" href="contacts.html">
+            <span class="number-of-followers">
+              <i class="fa-solid fa-user"></i>51
+            </span>
+            <span class="label-followers">seguidos</span>
           </a>
         </li>
         <li>
-          <a href="contacts.html">
-            <i class="fa-solid fa-users"></i>
-            <span class="navbar-text">Contactos</span>
-          </a>
-        </li>
-
-        <li>
-          <button
-            class="new-post"
-            data-bs-toggle="modal"
-            data-bs-target="#createPostModal"
-          >
-            <i class="fa-solid fa-circle-plus"></i>
-            <span class="navbar-text">Crear publicación</span>
-          </button>
-        </li>
-        <li>
-          <a href="profile.html">
-            <img
-              class="profile-avatar avatar-navbar"
-              src="images/avatar 1.png"
-              alt="Imagen perfil"
-            />
-            <span class="navbar-text">Mi perfil</span>
-          </a>
-        </li>
-        <li>
-          <a href="search.html">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <span class="navbar-text">Buscar</span>
+          <a class="followers-counter" href="contacts.html">
+            <span class="number-of-followers label-followers">
+              <i class="fa-solid fa-user"></i>42
+            </span>
+            <span class="label-followers">seguidores</span>
           </a>
         </li>
       </ul>
-    </nav>
+    </section>
 
-    <!--Modal-->
-    <div
-      class="modal fade"
-      id="createPostModal"
-      tabindex="-1"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-md modal-dialog-centered">
-        <div class="modal-content cp-modal-box p-4 rounded-3">
-          <div
-            class="modal-header border-0 pb-0 flex-column align-items-start position-relative"
-          >
-            <h2 class="modal-title h5 fw-bold m-0 text-uppercase">
-              Crear nueva publicación
-            </h2>
-            <button
-              type="button"
-              class="btn-close btn-close-white position-absolute top-0 end-0 m-1"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+    <article class="card-post">
+      <section>
+        <div class="user-img-name-date">
+          <img class="profile-avatar avatar-post" src="images/avatar 1.png" alt="avatar" />
+
+          <div class="post-user-info user-row">
+            <h3 class="user-name">Eduardo Pérez</h3>
+            <h4 class="publication-date">Hace 2 horas</h4>
           </div>
+        </div>
 
-          <div class="modal-body px-0 pb-0">
-            <div class="mb-3">
-              <input
-                type="text"
-                class="form-control cp-input p-3 rounded-2"
-                placeholder="Escribe tu título"
-              />
-            </div>
+        <div class="post-title">
+          <h2>¿Validación rota?</h2>
+        </div>
 
-            <div class="mb-3">
-              <textarea
-                class="form-control cp-input p-3 rounded-2"
-                placeholder="¿Qué quieres compartir?"
-                rows="5"
-              ></textarea>
-            </div>
+        <div class="post-text">
+          <div>
+            <p>
+              ¿Qué opinan de usar una etiqueta &lt;a&gt; dentro del contenedor .terms-button para redirigir al usuario,
+              en lugar de un verdadero &lt;button type="submit"&gt; controlado por JavaScript para validar que el
+              checkbox esté efectivamente tildado?
+            </p>
+          </div>
+          <div class="see-more-container">
+            <button class="see-more-button">Ver más</button>
+          </div>
+          <div>
+            <img class="img-post" alt="imagen-post" src="images/imagendeejemplo.png" />
+          </div>
+        </div>
+      </section>
 
-            <div class="mb-3">
-              <div class="cp-file-wrapper">
-                <input
-                  type="file"
-                  id="file-upload"
-                  class="form-control cp-file-input"
-                  accept="image/*"
-                  multiple
-                />
+      <section>
+        <div class="reactions">
+          <button class="reaction-like">
+            <i class="fa-regular fa-thumbs-up"></i>
+            <p>5</p>
+          </button>
 
-                <div class="cp-file-overlay rounded-2">
-                  <i class="fa-solid fa-image me-2"></i>
-                  Foto
-                </div>
-              </div>
+          <div class="power-bar"></div>
 
-              <div id="preview-container" class="d-none mt-3 text-center"></div>
-            </div>
+          <button class="reaction-dislike">
+            <i class="fa-regular fa-thumbs-down"></i>
+            <p>56</p>
+          </button>
+        </div>
+      </section>
 
-            <button
-              type="button"
-              class="btn cp-btn-submit w-100 fw-bold py-3 rounded-2 mt-2"
-            >
-              PUBLICAR
+      <section>
+        <h3>Comentarios</h3>
+
+        <section class="comment-input">
+          <img class="profile-avatar avatar-comment" src="images/avatar 1.png" alt="avatar" />
+
+          <div class="input-group">
+            <input type="text" placeholder="Escribe un comentario..." />
+            <button>
+              <i class="fa-solid fa-paper-plane"></i>
             </button>
           </div>
+        </section>
+
+        <section class="comments">
+          <section class="card-comment">
+            <div class="user-img-name-date">
+              <img class="profile-avatar avatar-comment" src="images/avatar 4.png" alt="avatar" />
+
+              <div class="user-row">
+                <h4 class="user-name">Elena Rostova</h4>
+                <h5 class="publication-date">Hace 1 hora</h5>
+              </div>
+            </div>
+
+            <p class="text-comment">
+              Desde la perspectiva del flujo de datos, delegar la navegación a una etiqueta &lt;a&gt; invalida la
+              semántica del formulario. Al no procesar el evento submit, el control del checkbox queda sin efecto
+              práctico, permitiendo derivar al usuario a register.html sin el consentimiento explícito de las políticas.
+            </p>
+          </section>
+
+          <section class="card-comment">
+            <div class="user-img-name-date">
+              <img class="profile-avatar avatar-comment" src="images/avatar 3.png" alt="avatar" />
+
+              <div class="user-row">
+                <h4 class="user-name">Alejandro Gómez</h4>
+                <h5 class="publication-date">Hace 45 min</h5>
+              </div>
+            </div>
+
+            <p class="text-comment">
+              Lo ideal para resolver este fallo de lógica sería sustituir el hipervínculo por un &lt;button
+              type="submit"&gt;. Adicionalmente, se debería enlazar el atributo disabled del botón al estado del
+              checkbox mediante un event listener en JavaScript, garantizando que la acción solo se desbloquee tras la
+              aceptación.
+            </p>
+          </section>
+
+          <section class="card-comment">
+            <div class="user-img-name-date">
+              <img class="profile-avatar avatar-comment" src="images/avatar 5.png" alt="avatar" />
+
+              <div class="user-row">
+                <h4 class="user-name">Gabriela Benítez</h4>
+                <h5 class="publication-date">Hace 10 min</h5>
+              </div>
+            </div>
+
+            <p class="text-comment">
+              Esto representa un problema crítico de UX y accesibilidad. Los lectores de pantalla interpretarán el
+              elemento como un enlace de navegación estándar y no como un desencadenador de confirmación. Recomiendo
+              unificar el comportamiento utilizando elementos semánticos de formulario y aplicando preventDefault() en
+              la validación.
+            </p>
+          </section>
+        </section>
+      </section>
+    </article>
+    <article class="card-post">
+      <section>
+        <div class="user-img-name-date">
+          <img class="profile-avatar avatar-post" src="images/avatar 2.png" alt="avatar" />
+
+          <div class="user-row">
+            <h3 class="user-name">Walter González</h3>
+            <h4 class="publication-date">Hace 16 horas</h4>
+          </div>
+        </div>
+
+        <div class="post-title">
+          <h2>Guía de SEO para Principiantes</h2>
+        </div>
+
+        <div>
+          <div>
+            <p>
+            <p>Cuando creaste tu sitio web, lo más probable es que lo hicieras pensando en tus usuarios con la intención
+              de facilitarles la búsqueda y la exploración de tu contenido. Algunos de estos usuarios son buscadores que
+              ayudan a que otros usuarios descubran tu contenido.</p>
+
+            <p>El SEO, que es la abreviatura en inglés de "optimización en buscadores", consiste en ayudar a los
+              buscadores a entender tu contenido y a los usuarios a encontrar tu sitio y tomar una decisión sobre si
+              deben visitarlo a través de un buscador.</p>
+
+            <p>En las Directrices básicas de la Búsqueda se describen los elementos más importantes para que tu sitio
+              web pueda aparecer en la Búsqueda de Google. Aunque no garantizamos que un sitio concreto se añada al
+              índice de Google, los sitios que siguen las Directrices básicas de la Búsqueda tienen más probabilidades
+              de aparecer en los resultados de búsqueda de Google.</p>
+
+            <p>El SEO consiste en dar el siguiente paso y trabajar para mejorar la presencia de tu sitio en la Búsqueda.
+              En esta guía se describen algunas de las mejoras más habituales y eficaces que puedes aplicar en tu sitio.
+            </p>
+
+            <p>Lo sentimos, pero no hay ningún secreto para posicionar automáticamente tu sitio en el primer lugar en
+              Google. De hecho, es posible que algunas de las sugerencias ni siquiera sean aplicables a tu empresa. No
+              obstante, si sigues las prácticas recomendadas, los buscadores (no solo Google) podrán rastrear, indexar y
+              comprender tu contenido más fácilmente.</p>
+
+            <p>¿Cómo funciona la Búsqueda de Google?</p>
+
+            <p>Google es un buscador totalmente automatizado que utiliza unos programas denominados "rastreadores" para
+              explorar la Web constantemente en busca de páginas que puedan añadirse a nuestro índice.</p>
+
+            <p>Normalmente basta con que publiques tu sitio en la Web. De hecho, la gran mayoría de los sitios que
+              aparecen en nuestros resultados se encuentran y se añaden automáticamente cuando rastreamos la Web. Si
+              quieres obtener más información, consulta la documentación disponible sobre cómo descubre, rastrea y
+              publica Google páginas web.</p>
+            </p>
+          </div>
+
+          <div>
+            <img class="img-post" alt="imagen-post" src="images/imagendeejemplo_seodegoogle.jpg" />
+          </div>
+        </div>
+
+        <div>
+          <button>Ver más</button>
+        </div>
+      </section>
+
+      <section>
+        <div class="reactions">
+          <button>
+            <i class="fa-regular fa-thumbs-up"></i>
+          </button>
+
+          <div class="power-bar"></div>
+
+          <button>
+            <i class="fa-regular fa-thumbs-down"></i>
+          </button>
+        </div>
+      </section>
+
+      <section>
+        <h3>Comentarios</h3>
+
+        <section class="comment-input">
+          <img class="profile-avatar avatar-comment" src="images/avatar 1.png" alt="avatar" />
+
+          <div class="input-group">
+            <input type="text" placeholder="Escribe un comentario..." />
+            <button>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </div>
+        </section>
+
+        <section class="comments">
+          <section class="card-comment">
+            <div class="user-img-name-date">
+              <img class="profile-avatar avatar-comment" src="images/avatar 7.png" alt="avatar" />
+
+              <div class="user-row">
+                <h4 class="user-name">Juan Pérez</h4>
+                <h5 class="publication-date">Hace 2 min</h5>
+              </div>
+            </div>
+
+            <p class="text-comment">
+              ¡Qué buena data! Me sirvió una banda la aclaración de que no hay recetas mágicas para aparecer primero en
+              Google. A veces nos volvemos locos con el código y nos olvidamos de que la base es facilitarle la lectura
+              a los rastreadores automatizados.
+            </p>
+          </section>
+
+          <section class="card-comment">
+            <div class="user-img-name-date">
+              <img class="profile-avatar avatar-comment" src="images/avatar 6.png" alt="avatar" />
+
+              <div class="user-row">
+                <h4 class="user-name">Pedro García</h4>
+                <h5 class="publication-date">Hace 1 hora</h5>
+              </div>
+            </div>
+
+            <p class="text-comment">
+              Excelente artículo. Es clave entender que los buscadores actúan como 'usuarios' especiales que indexan
+              nuestro contenido. Si estructuramos bien la semántica HTML pensando en ellos, terminamos ayudando también
+              al usuario final a encontrarnos. ¡te doy mi pulgar arriba!
+            </p>
+          </section>
+
+          <section class="card-comment">
+            <div class="user-img-name-date">
+              <img class="profile-avatar avatar-comment" src="images/avatar 8.png" alt="avatar" />
+
+              <div class="user-row">
+                <h4 class="user-name">Damian Rodriguez</h4>
+                <h5 class="publication-date">Hace 10 horas</h5>
+              </div>
+            </div>
+
+            <p class="text-comment">
+              Muy buen enfoque introductorio. Las Directrices básicas de la Búsqueda de Google deberían ser lectura
+              obligatoria para cualquiera que esté arrancando en Desarrollo de Software. Un sitio rápido, accesible y
+              bien estructurado tiene el 80% del SEO resuelto. ¡Gran aporte para la comunidad ConPila!
+            </p>
+          </section>
+        </section>
+      </section>
+    </article>
+  </main>
+
+  <nav class="nav-bar" id="grid-navbar">
+    <ul class="nav-bar-list">
+      <li class="active">
+        <a href="home.html">
+          <i class="fa-solid fa-house"></i>
+          <span class="navbar-text">Inicio</span>
+        </a>
+      </li>
+      <li>
+        <a href="contacts.html">
+          <i class="fa-solid fa-users"></i>
+          <span class="navbar-text">Contactos</span>
+        </a>
+      </li>
+
+      <li>
+        <button class="new-post" data-bs-toggle="modal" data-bs-target="#createPostModal">
+          <i class="fa-solid fa-circle-plus"></i>
+          <span class="navbar-text">Crear publicación</span>
+        </button>
+      </li>
+      <li>
+        <a href="profile.html">
+          <img class="profile-avatar avatar-navbar" src="images/avatar 1.png" alt="Imagen perfil" />
+          <span class="navbar-text">Mi perfil</span>
+        </a>
+      </li>
+      <li>
+        <a href="search.html">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <span class="navbar-text">Buscar</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!--Modal-->
+  <div class="modal fade" id="createPostModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-md modal-dialog-centered">
+      <div class="modal-content cp-modal-box p-4 rounded-3">
+        <div class="modal-header border-0 pb-0 flex-column align-items-start position-relative">
+          <h2 class="modal-title h5 fw-bold m-0 text-uppercase">
+            Crear nueva publicación
+          </h2>
+          <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-1"
+            data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body px-0 pb-0">
+          <div class="mb-3">
+            <input type="text" class="form-control cp-input p-3 rounded-2" placeholder="Escribe tu título" />
+          </div>
+
+          <div class="mb-3">
+            <textarea class="form-control cp-input p-3 rounded-2" placeholder="¿Qué quieres compartir?"
+              rows="5"></textarea>
+          </div>
+
+          <div class="mb-3">
+            <div class="cp-file-wrapper">
+              <input type="file" id="file-upload" class="form-control cp-file-input" accept="image/*" multiple />
+
+              <div class="cp-file-overlay rounded-2">
+                <i class="fa-solid fa-image me-2"></i>
+                Foto
+              </div>
+            </div>
+
+            <div id="preview-container" class="d-none mt-3 text-center"></div>
+          </div>
+
+          <button type="button" class="btn cp-btn-submit w-100 fw-bold py-3 rounded-2 mt-2">
+            PUBLICAR
+          </button>
         </div>
       </div>
     </div>
+  </div>
 
-    <!--Links modal bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/modal-preview.js"></script>
-  </body>
+  <!--Links modal bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/modal-preview.js"></script>
+</body>
+
 </html>
